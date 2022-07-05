@@ -1,0 +1,465 @@
+/*!
+<----------------------------------------
+  Theme Name: Image Data
+  Theme URI: http://Image data/
+  Author: Islamhossain.inco.
+  Author URI: http://islamhossain.info/
+  Description: Image data is a Creative HTML5 Template for Saas, Startup & any ytpe of confarence.
+  Version: 1.0.0
+  Tags: app, image data landing page, app landing page, app showcase template, application services, gradient color, landing, marketing, responsive template, seo, software, Software Services, startup, tech, web application landing page.
+---------------------------------------->
+*/
+/*
+>>> TABLE OF CONTENTS:
+<----------------------------------------------------------------
+  01. Default CSS
+  02. Global css
+  03. Header
+  04. sidebar menu
+  05. About
+  07. Roadmap
+  08. News
+  09. Team
+  10. Contact
+---------------------------------------------------------------->
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body {
+  font-family: 'Capriola', sans-serif;
+  font-weight: 100;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
+  counter-reset: my-sec-counter;
+  scroll-behavior: smooth;
+  scrollbar-width: 2px;
+  letter-spacing: 0.065em;
+  font-size: $fs-body !important;
+  line-height: 25.5px;
+}
+body.overflow{
+overflow: hidden;
+}
+a{
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-footer{
+color: white;
+font-weight: bold;
+font-size: 17px;
+background: linear-gradient(170deg, #ABDCFF 0%, #0396FF 100%);
+height: 50px;
+padding: 0 40px;
+margin: 0;
+border-radius: 25px;
+border-top-left-radius: 25px !important;
+border-bottom-left-radius: 25px !important;
+border: 0;
+  @include breakpoint(mid-md){
+    padding: 0 60px;
+  }
+}
+.border-radius-lg{
+  border-radius: $border-radius-lg;
+}
+.header-area{
+  h3{
+    font-size: $fs-header;
+    color: $title-color;
+  }
+}
+.btn-order, .btn-trail, .btn-bg-remove, .btn-e-comme, .btn-gost{
+  padding: 13px 25px;
+  margin: 0 10px 0 0;
+  border-radius: $border-radius-lg;
+  font-size: $fs-body;
+}
+.btn-order{
+  background-color: $title-color-trns;
+  color: $title-color;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+      background-color: $title-color;
+      color: $white-color;
+  }
+}
+.btn-trail{
+  background-color: $theme-trans;
+  color: $theme-color;
+  &:hover{
+      background-color: $theme-color;
+      color: $white-color;
+  }
+}
+.btn-bg-remove{
+  background-color: #F6EFFF;
+  color: $purple-color;
+  &:hover{
+      background-color: $purple-color;
+      color: $white-color;
+  }
+}
+.btn-e-comme{
+  background-color: #EFF3FA;
+  color: $title-color;
+  &:hover{
+      background-color: $title-color;
+      color: $white-color;
+  }
+}
+.btn-gost{
+  background-color: $blue-color3-bg;
+  color: $blue-color3;
+  &:hover{
+      background-color: $blue-color3;
+      color: $white-color;
+  }
+}
+
+
+
+.btn-next{
+  padding: 5px 15px;
+  border: 1px solid $theme-dark;
+  background-color: transparent;
+  border-radius: 35px;
+  color: $theme-dark;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  @include breakpoint(sm){
+      padding: 8px 25px;
+  }
+  &:hover{
+    padding: 5px 15px;
+    border: 1px solid $theme-light2;
+    background-color: $theme-light2;
+    border-radius: 35px;
+    color: white;
+    @include breakpoint(sm){
+      &:hover{
+        padding: 8px 25px;
+      }
+    }
+  }
+}
+.btn-skip{
+  padding: 5px 14px;
+  background-color: transparent;
+  border-radius: 35px;
+  color: $theme-light2;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  text-transform: capitalize;
+  @include breakpoint(sm){
+    padding: 8px 25px ;
+  }
+  &:hover{
+    padding: 5px 14px;
+    background-color: $theme-dark;
+    border-radius: 35px;
+    color: white;
+    @include breakpoint(sm){
+      padding: 8px 25px;
+    }
+  }
+}
+.btn-skip-disable{
+  padding: 5px 14px;
+  background-color: transparent;
+  border-radius: 35px;
+  color: $theme-light2;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  text-transform: capitalize;
+  @include breakpoint(sm){
+    padding: 8px 25px;
+  }
+  &:hover{
+    padding: 5px 14px;
+    background-color: $theme-dark;
+    border-radius: 35px;
+    color: white;
+    opacity: 0.5;
+    @include breakpoint(sm){
+      padding: 8px 25px;
+    }
+  }
+} 
+
+@keyframes animate-1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+//? all social media
+.ck.ck-toolbar {
+  background-color: white !important;
+  border: none !important;
+  .ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+    border-color: 0px white !important;
+  }
+}
+@keyframes preloader
+{
+0% { width: 0%;}
+100% { width: 100%;}
+}
+
+@keyframes rotate-circle {
+  0% {
+      transform: rotate(-45deg);
+  }
+  5% {
+      transform: rotate(-45deg);
+  }
+  12% {
+      transform: rotate(-405deg);
+  }
+  100% {
+      transform: rotate(-405deg);
+  }
+}
+
+@keyframes icon-line-tip {
+  0% {
+      width: 0;
+      left: 1px;
+      top: 19px;
+  }
+  54% {
+      width: 0;
+      left: 1px;
+      top: 19px;
+  }
+  70% {
+      width: 50px;
+      left: -8px;
+      top: 37px;
+  }
+  84% {
+      width: 17px;
+      left: 21px;
+      top: 48px;
+  }
+  100% {
+      width: 25px;
+      left: 14px;
+      top: 45px;
+  }
+}
+
+@keyframes icon-line-long {
+  0% {
+      width: 0;
+      right: 46px;
+      top: 54px;
+  }
+  65% {
+      width: 0;
+      right: 46px;
+      top: 54px;
+  }
+  84% {
+      width: 55px;
+      right: 0px;
+      top: 35px;
+  }
+  100% {
+      width: 47px;
+      right: 8px;
+      top: 38px;
+  }
+}
+@keyframes isotop_opacity {
+  from{transform: scale(0); transform-origin: left;}
+  to{transform: scale(1); transform-origin: right;}
+}
+@keyframes isotop_ecommerce {
+  from{transform: scale(0); transform-origin: top;}
+  to{transform: scale(1); transform-origin: bottom;}
+}
+@keyframes isotop_informative {
+  from{transform: scale(0); transform-origin: right;}
+  to{transform: scale(1); transform-origin: left;}
+}
+@keyframes isotop_application {
+  from{transform: scaleX(0); transform-origin: left;}
+  to{transform: scaleX(1); transform-origin: right;}
+}
+@keyframes application {
+  from{transform: scale(0); transform-origin: bottom;}
+  to{transform: scale(1); transform-origin: top;}
+}
+@keyframes our_animate1{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+@keyframes our_animate2{
+  0%{transform: rotateY(0deg);}
+  100%{transform: rotateY(360deg);}
+}
+@keyframes technology_img_2{
+  0%{bottom: -190px;}
+  50%{bottom: -250px;}
+  100%{bottom: -190px;}
+}
+
+//comparison slider
+.cd-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 768px;
+  margin: 0em auto;
+}
+.cd-image-container img {
+  display: block;
+}
+
+.cd-image-label {
+  position: absolute;
+  font-weight: 500;
+  letter-spacing: 1px;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+}
+.cd-image-label.is-hidden {
+  visibility: hidden;
+}
+.is-visible .cd-image-label {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.cd-resize-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-right: 2px solid white;
+}
+.cd-resize-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+.cd-resize-img .cd-image-label {
+  right: auto;
+  left: 0;
+}
+.is-visible .cd-resize-img {
+  width: 50%;
+  /* bounce in animation of the modified image */
+  -webkit-animation: cd-bounce-in 0.7s;
+  -moz-animation: cd-bounce-in 0.7s;
+  animation: cd-bounce-in 0.7s;
+}
+
+@-webkit-keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-moz-keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.cd-handle {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  /* center the element */
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  border-radius: 50%;
+  background: #F15959 url("https://images.clickfunnels.com/09/a714400d3211e7a0bd7d7140585054/cd-arrows.svg") no-repeat center center;
+  cursor: move;
+  box-shadow: 0 0 0 6px #ffd1d1, 0 0 10px rgba(255, 212, 212, 0.6), inset 0 rgba(252, 44, 44, 0.3), 0.3;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) scale(0);
+  -moz-transform: translate3d(0, 0, 0) scale(0);
+  -ms-transform: translate3d(0, 0, 0) scale(0);
+  -o-transform: translate3d(0, 0, 0) scale(0);
+  transform: translate3d(0, 0, 0) scale(0);
+}
+.cd-handle.draggable {
+  /* change background color when element is active */
+  background-color: #445b7c;
+}
+.is-visible .cd-handle {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  -moz-transform: translate3d(0, 0, 0) scale(1);
+  -ms-transform: translate3d(0, 0, 0) scale(1);
+  -o-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}

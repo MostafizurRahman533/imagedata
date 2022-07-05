@@ -1,0 +1,56 @@
+//*===== banner area start ====*//
+.banner{
+    margin: 80px 0;
+    .banner-left{
+        .header-content{
+            h3{
+                font-size: $fs-header;
+                color: $title-color;
+                font-weight: bold;
+                width: 100%;
+                line-height: 39px;
+                margin: 20px 0;
+                @include breakpoint(md){
+                    width: 80%;   
+                }
+            }
+        }
+        .banner-content{
+            p{
+                color: $fs-body;
+                color: $content-color;
+                margin: 5px 0 20px 0;
+                a{
+                    color: $theme-color;
+                }
+            }
+        }
+        .banner-button{
+            margin: 20px 0;
+        }
+    }
+    .swiper{
+        border: 2px solid $content-color;
+        border-radius: $border-radius-lg;
+        .swiper-slide{
+            img{
+                max-height: 510px;
+                width: 100%;
+            }
+        }
+        .swiper-button-next, .swiper-button-prev{
+            &::after{
+                display: none;
+            }
+            padding: 5px 37px;
+            border-radius: 20px;
+            background: #FFF0F0;
+            height: auto;
+            i{
+                font-size: $fs-header;
+                color: $theme-color;
+            }
+        }
+    }
+}
+//*===== banner area start ====*//
