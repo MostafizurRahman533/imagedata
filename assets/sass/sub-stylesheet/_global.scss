@@ -35,8 +35,8 @@ Typography
     border: none;
 }
 body {
-  font-family: 'Capriola', sans-serif;
-  font-weight: 100;
+  font-family: 'Capriola', sans-serif !important;
+  font-weight: 500;
   position: relative;
   transition: all 0.3s ease-in-out;
   background-color: #f9f9f9;
@@ -50,6 +50,7 @@ body {
 body.overflow{
 overflow: hidden;
 }
+
 a{
   text-decoration: none;
   transition: all 0.2s ease;
@@ -77,6 +78,7 @@ border: 0;
   h3{
     font-size: $fs-header;
     color: $title-color;
+    font-weight: 600;
   }
 }
 .btn-order, .btn-trail, .btn-bg-remove, .btn-e-comme, .btn-gost{
@@ -474,9 +476,7 @@ border: 0;
   width: 100%;
   height: auto;
 }
-.mfp-bottom-bar,*{
- font-family: 'Abel', sans-serif;
-}
+
 .magnific-img {
   display: inline-block;
 }

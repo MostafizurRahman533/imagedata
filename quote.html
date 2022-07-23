@@ -107,9 +107,9 @@
                             <h3>What kind of service can provide you with image data?</h3>
                             <p>You can add multiple services for each set of edits. If you have images that require different edits, please request a separate quote for each set.</p>
                         </div>
-                        <form action="" method="">
+                        <form action="" method="" name="quote-form">
                             <div class="select-area">
-                                <div class="d-flex choose-service" onclick="choose()">
+                                <div class="d-flex choose-service align-items-center" onclick="choose()">
                                     <p class="w-100 ">Choose Service</p> <i class="fa-solid fa-chevron-down"></i> 
                                 </div>
                                 <div class="service-select">
@@ -152,8 +152,8 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="service-select-box">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="0.59">
-                                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="clipping" id="clipping1" value="0.59">
+                                                                    <label class="form-check-label" for="clipping1">
                                                                         Complexity 1
                                                                     </label>
                                                                 </div>
@@ -169,7 +169,7 @@
                                                                         <div class="image-overlay-select">
                                                                             <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
                                                                             <div class="overlay">
-                                                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                                     <i class="fa-solid fa-eye"></i>
                                                                                 </button>                                                                                
                                                                             </div>
@@ -181,8 +181,8 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="service-select-box">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="0.69">
-                                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="clipping" id="clipping2" value="0.69">
+                                                                    <label class="form-check-label" for="clipping2">
                                                                         Complexity 2
                                                                     </label>
                                                                 </div>
@@ -198,7 +198,7 @@
                                                                         <div class="image-overlay-select">
                                                                             <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
                                                                             <div class="overlay">
-                                                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                                     <i class="fa-solid fa-eye"></i>
                                                                                 </button>                                                                                
                                                                             </div>
@@ -210,8 +210,8 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="service-select-box">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="0.79">
-                                                                    <label class="form-check-label" for="flexRadioDefault3">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="clipping" id="clipping3" value="0.79">
+                                                                    <label class="form-check-label" for="clipping3">
                                                                         Complexity 3
                                                                     </label>
                                                                 </div>
@@ -227,7 +227,7 @@
                                                                         <div class="image-overlay-select">
                                                                             <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
                                                                             <div class="overlay">
-                                                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                                     <i class="fa-solid fa-eye"></i>
                                                                                 </button>                                                                                
                                                                             </div>
@@ -239,8 +239,8 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="service-select-box">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" value="1.20">
-                                                                    <label class="form-check-label" for="flexRadioDefault4">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="clipping" id="clipping4" value="1.20">
+                                                                    <label class="form-check-label" for="clipping4">
                                                                         Complexity 4
                                                                     </label>
                                                                 </div>
@@ -256,7 +256,7 @@
                                                                         <div class="image-overlay-select">
                                                                             <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
                                                                             <div class="overlay">
-                                                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                                     <i class="fa-solid fa-eye"></i>
                                                                                 </button>                                                                                
                                                                             </div>
@@ -268,8 +268,8 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="service-select-box">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" value="1.30">
-                                                                    <label class="form-check-label" for="flexRadioDefault5">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="clipping" id="clipping5" value="1.30">
+                                                                    <label class="form-check-label" for="clipping5">
                                                                         Complexity 5
                                                                     </label>
                                                                 </div>
@@ -285,7 +285,7 @@
                                                                         <div class="image-overlay-select">
                                                                             <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
                                                                             <div class="overlay">
-                                                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                                     <i class="fa-solid fa-eye"></i>
                                                                                 </button>                                                                                
                                                                             </div>
@@ -297,8 +297,8 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="service-select-box">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" value="1.50">
-                                                                    <label class="form-check-label" for="flexRadioDefault6">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="clipping" id="clipping6" value="1.50">
+                                                                    <label class="form-check-label" for="clipping6">
                                                                         Complexity 6
                                                                     </label>
                                                                 </div>
@@ -314,7 +314,7 @@
                                                                         <div class="image-overlay-select">
                                                                             <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
                                                                             <div class="overlay">
-                                                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                                     <i class="fa-solid fa-eye"></i>
                                                                                 </button>                                                                                
                                                                             </div>
@@ -325,35 +325,1518 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="e-commerce-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">E-Commerce</div>
-                                                <div class="tab-pane fade" id="background-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Backgroud -remove</div>
-                                                <div class="tab-pane fade" id="masking-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Masking</div>
-                                                <div class="tab-pane fade" id="shadow-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Shadow</div>
-                                                <div class="tab-pane fade" id="jewelry-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Jewelry</div>
-                                                <div class="tab-pane fade" id="color-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Color</div>
-                                                <div class="tab-pane fade" id="retouching-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Retouching</div>
-                                                <div class="tab-pane fade"  id="mennequin-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Mennequin</div>
+                                                <div class="tab-pane fade" id="e-commerce-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="ecommrece2" id="ecommrece11" value="0.59">
+                                                                    <label class="form-check-label" for="ecommrece11">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="ecommrece2" id="ecommrece12" value="0.69">
+                                                                    <label class="form-check-label" for="ecommrece12">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="ecommrece2" id="ecommrece13" value="0.79">
+                                                                    <label class="form-check-label" for="ecommrece13">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="ecommrece2" id="ecommrece14" value="1.20">
+                                                                    <label class="form-check-label" for="ecommrece14">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="ecommrece2" id="ecommrece15" value="1.30">
+                                                                    <label class="form-check-label" for="ecommrece15">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="ecommrece2" id="ecommrece16" value="2.50">
+                                                                    <label class="form-check-label" for="ecommrece16">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="background-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="bgremove3" id="bgremove21" value="0.59">
+                                                                    <label class="form-check-label" for="bgremove21">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="bgremove3" id="bgremove22" value="2.69">
+                                                                    <label class="form-check-label" for="bgremove22">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $2.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="bgremove3" id="bgremove23" value="0.79">
+                                                                    <label class="form-check-label" for="bgremove23">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="bgremove3" id="bgremove24" value="2.20">
+                                                                    <label class="form-check-label" for="bgremove24">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="bgremove3" id="bgremove25" value="2.30">
+                                                                    <label class="form-check-label" for="bgremove25">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="bgremove3" id="bgremove26" value="3.50">
+                                                                    <label class="form-check-label" for="bgremove26">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="masking-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="masking3" id="masking21" value="0.59">
+                                                                    <label class="form-check-label" for="masking21">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="masking3" id="masking22" value="2.69">
+                                                                    <label class="form-check-label" for="masking22">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $2.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="masking3" id="masking23" value="0.79">
+                                                                    <label class="form-check-label" for="masking23">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="masking3" id="masking24" value="2.20">
+                                                                    <label class="form-check-label" for="masking24">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="masking3" id="masking25" value="2.30">
+                                                                    <label class="form-check-label" for="masking25">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="masking3" id="masking26" value="3.50">
+                                                                    <label class="form-check-label" for="masking26">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="shadow-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="shadow3" id="shadow21" value="0.59">
+                                                                    <label class="form-check-label" for="shadow21">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="shadow3" id="shadow22" value="2.69">
+                                                                    <label class="form-check-label" for="shadow22">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $2.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="shadow3" id="shadow23" value="0.79">
+                                                                    <label class="form-check-label" for="shadow23">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="shadow3" id="shadow24" value="2.20">
+                                                                    <label class="form-check-label" for="shadow24">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="shadow3" id="shadow25" value="2.30">
+                                                                    <label class="form-check-label" for="shadow25">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="shadow3" id="shadow26" value="3.50">
+                                                                    <label class="form-check-label" for="shadow26">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="jewelry-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="jewelry3" id="jewelry21" value="0.59">
+                                                                    <label class="form-check-label" for="jewelry21">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="jewelry3" id="jewelry22" value="2.69">
+                                                                    <label class="form-check-label" for="jewelry22">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $2.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="jewelry3" id="jewelry23" value="0.79">
+                                                                    <label class="form-check-label" for="jewelry23">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="jewelry3" id="jewelry24" value="2.20">
+                                                                    <label class="form-check-label" for="jewelry24">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="jewelry3" id="jewelry25" value="2.30">
+                                                                    <label class="form-check-label" for="jewelry25">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="jewelry3" id="jewelry26" value="3.50">
+                                                                    <label class="form-check-label" for="jewelry26">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="color-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color21" value="0.59">
+                                                                    <label class="form-check-label" for="color21">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color22" value="2.69">
+                                                                    <label class="form-check-label" for="color22">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $2.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color23" value="0.79">
+                                                                    <label class="form-check-label" for="color23">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color24" value="2.20">
+                                                                    <label class="form-check-label" for="color24">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color25" value="2.30">
+                                                                    <label class="form-check-label" for="color25">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color26" value="3.50">
+                                                                    <label class="form-check-label" for="color26">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="retouching-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color21" value="0.59">
+                                                                    <label class="form-check-label" for="color21">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color22" value="2.69">
+                                                                    <label class="form-check-label" for="color22">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $2.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color23" value="0.79">
+                                                                    <label class="form-check-label" for="color23">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color24" value="2.20">
+                                                                    <label class="form-check-label" for="color24">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color25" value="2.30">
+                                                                    <label class="form-check-label" for="color25">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="color3" id="color26" value="3.50">
+                                                                    <label class="form-check-label" for="color26">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade"  id="mennequin-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="menne3" id="menne21" value="0.59">
+                                                                    <label class="form-check-label" for="menne21">
+                                                                        Complexity 1
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.59</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="menne3" id="menne22" value="2.69">
+                                                                    <label class="form-check-label" for="menne22">
+                                                                        Complexity 2
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $2.69</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="menne3" id="menne23" value="0.79">
+                                                                    <label class="form-check-label" for="menne23">
+                                                                        Complexity 3
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $0.79</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="menne3" id="menne24" value="2.20">
+                                                                    <label class="form-check-label" for="menne24">
+                                                                        Complexity 4
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.20</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="menne3" id="menne25" value="2.30">
+                                                                    <label class="form-check-label" for="menne25">
+                                                                        Complexity 5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.30</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="service-select-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input from-check-service" type="radio" name="menne3" id="menne26" value="3.50">
+                                                                    <label class="form-check-label" for="menne26">
+                                                                        Complexity 6
+                                                                    </label>
+                                                                </div>
+                                                                <div class="select-box-slider">
+                                                                    <p> Image – $1.50</p>
+                                                                    <div class="select-image d-flex">
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="image-overlay-select">
+                                                                            <img src="assets/images/quote/01.png" alt="n/a" class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                                    <i class="fa-solid fa-eye"></i>
+                                                                                </button>                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                               </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" name="first-name" placeholder="First Name" aria-label="Firstname">
+                            <div class="input-group">
+                                <p class="input-group-content">Save on your total price if you have time to wait, or choose a faster turnaround time if you’re on a tight deadline.</p>
+                                <div class="from-time d-flex flex-wrap">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timehour" id="timehour1" value="0.59" checked>
+                                        <label class="form-check-label" for="timehour1">
+                                            6 hours – $0.59 USD
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timehour" id="timehour2" value="0.56">
+                                        <label class="form-check-label" for="timehour2">
+                                            12 hours – $0.56 USD
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timehour" id="timehour3" value="0.56">
+                                        <label class="form-check-label" for="timehour3">
+                                            12 hours – $0.56 USD
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timehour" id="timehour4" value="0.39">
+                                        <label class="form-check-label" for="timehour4">
+                                            24 hours – $0.39 USD
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timehour" id="timehour5" value="0.37">
+                                        <label class="form-check-label" for="timehour5">
+                                            34 hours – $0.37 USD
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timehour" id="timehour6" value="0.33">
+                                        <label class="form-check-label" for="timehour6">
+                                            48 hours – $0.33 USD
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timehour" id="timehour7" value="0.30">
+                                        <label class="form-check-label" for="timehour7">
+                                            96 hours – $0.30 USD
+                                        </label>
+                                      </div>
+                                </div>                                
+                            </div>
+                            <div class="input-group mb-3" id="select-area">
+                                <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif," class="form-control fileinput-button" name="email" placeholder="Email" aria-label="Username">
+                                <output id="Filelist"></output>
+                                
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="input-group ">
+                                        <input type="text" class="form-control" name="first-name" placeholder="First Name" aria-label="Firstname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group col-md-3">
+                                        <input type="text" class="form-control" name="last-name" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="input-group ">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Firstname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group col-md-3">
+                                        <input type="text" class="form-control" name="last-name" placeholder="Phone Number">
+                                    </div>
+                                </div>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" name="last-name" placeholder="Last Name" aria-label=":astname">
+                                <textarea class="form-control" aria-label="With textarea" placeholder="Please Share any instruction of your edit" rows="7"></textarea>
                             </div>
-                            <div class="input-group mb-3">
-                                <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Username">
+                            <div class="d-flex justify-content-between">
+                                <p class="total">total:</p>
+                                <button type="button" class="btn btn-trail btn-submit" onclick="btnEvent()">Send &nbsp; <i class="fa-solid fa-arrow-right-long"></i></button>
                             </div>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject" aria-label="Subject">
-                            </div>
-                            <div class="input-group mb-3">
-                                <textarea class="form-control" aria-label="With textarea" placeholder="Subject" rows="5"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-trail">Send &nbsp; <i class="fa-solid fa-arrow-right-long"></i></button>
                         </form>
                     </div>
                 </div>
@@ -361,25 +1844,46 @@
         </div>
     </section>
     <!-- quote area end-->
-    <button class="conatiner btn btn-trail" onclick="btnEvent()">click</button>
-    <p class="total">total:</p>
     <!-- modal -->
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centere h-100 modal-lg">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-slider-area">
+                        <div class="swiper modal-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="d-flex w-100 align-items-center justify-content-around">
+                                        <div class="text-center"><img src="assets/images/quote/02.png" alt="n/a" class="img-fluid"><p>Before Image</p> </div>
+                                        <div class="text-center"><img src="assets/images/quote/03.png" alt="n/a" class="img-fluid"><p>After Image</p> </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex w-100 align-items-center justify-content-around">
+                                        <div class="text-center"><img src="assets/images/quote/02.png" alt="n/a" class="img-fluid"><p>Before Image</p> </div>
+                                        <div class="text-center"><img src="assets/images/quote/03.png" alt="n/a" class="img-fluid"><p>After Image</p> </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex w-100 align-items-center justify-content-around">
+                                        <div class="text-center"><img src="assets/images/quote/02.png" alt="n/a" class="img-fluid"><p>Before Image</p> </div>
+                                        <div class="text-center"><img src="assets/images/quote/03.png" alt="n/a" class="img-fluid"><p>After Image</p> </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex w-100 align-items-center justify-content-around">
+                                        <div class="text-center"><img src="assets/images/quote/02.png" alt="n/a" class="img-fluid"><p>Before Image</p> </div>
+                                        <div class="text-center"><img src="assets/images/quote/03.png" alt="n/a" class="img-fluid"><p>After Image</p> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"><i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
       </div>
     <!-- footer area start-->
@@ -531,23 +2035,49 @@
   });
 });
 
-
-var btnArray = document.querySelectorAll('.form-check-input');
+var btnArray = document.querySelectorAll('.from-check-service');
+var btnArray2 = document.querySelectorAll('.form-check-input');
 var service_select = document.querySelector('.service-select');
 var totalprint = document.querySelector('.total');
-
+var tabpane = document.querySelectorAll('.tab-pane');
+var navlink = document.querySelectorAll('.nav-link');
+var focbtn;
+var radios = document.getElementsByTagName("input");
+var infile = document.querySelector('input[type=file]');
+var btnsubmit = document.querySelector('.btn-submit');
 function btnEvent() {
     for ( var i = 0; i < btnArray.length; i++) {
-        if(btnArray[i].checked==false){
-            service_select.classList.add('open');
-            btnArray[0].focus();
+        if(btnArray[i].checked==true){
+            console.log(focbtn);
+            focbtn = null; 
             break;
         }
         else{
-            alert("yes")
+            focbtn = btnArray[i];
         }
     };
-	
+    
+    if(focbtn == null){
+        //console.log("null");
+        btnsubmit.setAttribute('type', 'submit');
+    }
+
+    else{
+        service_select.classList.add('open');
+        for ( var i = 0; i < navlink.length; i++) {
+            navlink[i].classList.remove('active');
+        };
+        for ( var i = 0; i < tabpane.length; i++) {
+            tabpane[i].classList.remove('active');
+            tabpane[i].classList.remove('show');
+        }
+        tabpane[0].classList.add('active');
+        navlink[0].classList.add('active');
+        tabpane[0].classList.add('show');
+        btnArray[0].focus();
+        console.log("not null");
+    }
+	// to write focus in input field
 };
 function choose(){
     if(service_select.classList.contains('open')){
@@ -558,25 +2088,52 @@ function choose(){
     }
 }
 for ( var i = 0; i < btnArray.length; i++) {
-	btnArray[i].addEventListener('click', total, false);
+	btnArray[i].addEventListener('click', calculateTotal, false);
 };
-function total(){
-    for ( var i = 0; i < btnArray.length; i++) {
-        if(btnArray[i].checked==true){
-            // service_select.classList.add('open');
-            // btnArray[0].focus();
-            console.log('true');
-            var name = document.querySelector('input[name="flexRadioDefault"]:checked').value;
-            //console.log(name);
-            totalprint.innerHTML = name;
+for ( var i = 0; i < btnArray2.length; i++) {
+	btnArray2[i].addEventListener('click', calculateTotal, false);
+};
+document.querySelector('input[type="file"]').addEventListener("change", calculateTotal);
+function calculateTotal(){
+    var infiles = infile.files.length;
+    var totala = 0,
+        i;
+    
+    for (i = 0; i < radios.length; i++) {
+        if (radios[i].type == 'radio' && radios[i].checked) {
+            totala += Number(radios[i].value);
         }
-        else{
-            
-            
-        }
-        
-    };
+    }
+      if(infiles == 0 ){
+        infiles = 1;
+      } 
+      if( totala == 0){
+        alert("Please select a service")
+      }
+    totalprint.innerHTML = totala * infiles;
+    return false; 
 }
+
+function inputfile(){
+    var infiles = infile.files.length;
+    var totala = 0,
+        i;
+    
+    for (i = 0; i < radios.length; i++) {
+        if (radios[i].type == 'radio' && radios[i].checked) {
+            totala += Number(radios[i].value);
+        }
+    }
+    if(totala == 0){
+        totala = 1;
+      } 
+       
+    totalprint.innerHTML = totala * infiles;
+    console.log(infile.files.length);
+    return false;     
+}
+
+
     </script> 
     
 </body>
