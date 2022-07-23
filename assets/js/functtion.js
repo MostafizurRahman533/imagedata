@@ -256,16 +256,7 @@ $('input[data-list]').each(function () {
 });
 
 // li class active 
-// Add active class to the current button (highlight it)
-var header = document.getElementById("select-area");
-var btns = header.getElementsByClassName("form-control");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  // var current = document.getElementsByClassName("show");
-  // current[0].className = current[0].className.replace(" show", "");
-  // this.className += " show";
-  });
-}
+
 
 
     })(jQuery);
