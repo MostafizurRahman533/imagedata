@@ -1,3 +1,4 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
 $(document).ready(function(){
   $('.image-popup-vertical-fit').magnificPopup({
@@ -22,7 +23,6 @@ $(document).ready(function(){
   });
   
   });
-
 
 var swiper = new Swiper(".mySwiper", {
     navigation: {
