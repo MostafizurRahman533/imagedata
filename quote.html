@@ -1758,43 +1758,43 @@
                                 <p class="input-group-content">Save on your total price if you have time to wait, or choose a faster turnaround time if you’re on a tight deadline.</p>
                                 <div class="from-time d-flex flex-wrap">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="timehour" id="timehour1" value="0.59" checked>
+                                        <input class="form-check-input from-check-time" type="radio" name="timehour" id="timehour1" value="0.59">
                                         <label class="form-check-label" for="timehour1">
                                             6 hours – $0.59 USD
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="timehour" id="timehour2" value="0.56">
+                                        <input class="form-check-input from-check-time" type="radio" name="timehour" id="timehour2" value="0.56">
                                         <label class="form-check-label" for="timehour2">
                                             12 hours – $0.56 USD
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="timehour" id="timehour3" value="0.56">
+                                        <input class="form-check-input from-check-time" type="radio" name="timehour" id="timehour3" value="0.56">
                                         <label class="form-check-label" for="timehour3">
                                             12 hours – $0.56 USD
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="timehour" id="timehour4" value="0.39">
+                                        <input class="form-check-input from-check-time" type="radio" name="timehour" id="timehour4" value="0.39">
                                         <label class="form-check-label" for="timehour4">
                                             24 hours – $0.39 USD
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="timehour" id="timehour5" value="0.37">
+                                        <input class="form-check-input from-check-time" type="radio" name="timehour" id="timehour5" value="0.37">
                                         <label class="form-check-label" for="timehour5">
                                             34 hours – $0.37 USD
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="timehour" id="timehour6" value="0.33">
+                                        <input class="form-check-input from-check-time" type="radio" name="timehour" id="timehour6" value="0.33">
                                         <label class="form-check-label" for="timehour6">
                                             48 hours – $0.33 USD
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="timehour" id="timehour7" value="0.30">
+                                        <input class="form-check-input from-check-time" type="radio" name="timehour" id="timehour7" value="0.30">
                                         <label class="form-check-label" for="timehour7">
                                             96 hours – $0.30 USD
                                         </label>
@@ -1802,7 +1802,7 @@
                                 </div>                                
                             </div>
                             <div class="input-group mb-3" id="select-area">
-                                <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif," class="form-control fileinput-button" name="email" placeholder="Email" aria-label="Username">
+                                <input type="file" required name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif," class="form-control fileinput-button" name="email" placeholder="Email" aria-label="Username">
                                 <output id="Filelist"></output>
                                 
                             </div>
@@ -1833,8 +1833,8 @@
                             <div class="input-group mb-3">
                                 <textarea class="form-control" aria-label="With textarea" placeholder="Please Share any instruction of your edit" rows="7"></textarea>
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <p class="total">total:</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="total-pre">Total Amount= <span class="total">00</span> $</p>
                                 <button type="button" class="btn btn-trail btn-submit" onclick="btnEvent()">Send &nbsp; <i class="fa-solid fa-arrow-right-long"></i></button>
                             </div>
                         </form>
@@ -2036,12 +2036,12 @@
 });
 
 var btnArray = document.querySelectorAll('.from-check-service');
-var btnArray2 = document.querySelectorAll('.form-check-input');
+var btnArray2 = document.querySelectorAll('.from-check-time');
 var service_select = document.querySelector('.service-select');
 var totalprint = document.querySelector('.total');
 var tabpane = document.querySelectorAll('.tab-pane');
 var navlink = document.querySelectorAll('.nav-link');
-var focbtn;
+var focbtn, focbtn2;
 var radios = document.getElementsByTagName("input");
 var infile = document.querySelector('input[type=file]');
 var btnsubmit = document.querySelector('.btn-submit');
@@ -2056,10 +2056,26 @@ function btnEvent() {
             focbtn = btnArray[i];
         }
     };
-    
+      
     if(focbtn == null){
         //console.log("null");
-        btnsubmit.setAttribute('type', 'submit');
+        //btnsubmit.setAttribute('type', 'submit');
+        for ( var i = 0; i < btnArray2.length; i++) {
+            if(btnArray2[i].checked==true){
+                console.log(btnArray2[i]);
+                focbtn2 = null; 
+                break;
+            }
+            else{
+                focbtn2 = btnArray2[i];
+            }
+        };
+        if(focbtn2 == null){
+            btnsubmit.setAttribute('type', 'submit');
+        }
+        else{
+            btnArray2[0].focus();
+        }
     }
 
     else{
@@ -2075,7 +2091,6 @@ function btnEvent() {
         navlink[0].classList.add('active');
         tabpane[0].classList.add('show');
         btnArray[0].focus();
-        console.log("not null");
     }
 	// to write focus in input field
 };
