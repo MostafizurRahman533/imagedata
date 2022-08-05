@@ -97,6 +97,7 @@ var swiper = new Swiper(".trust-prof-slider", {
   },
 });
 var swiper = new Swiper(".service-slider", {
+  spaceBetween: 30,
   navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -136,6 +137,12 @@ var swiper = new Swiper(".modal-swiper", {
   },
 });
 
+var swiper = new Swiper(".blogslider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // isotope js
 

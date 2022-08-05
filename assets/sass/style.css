@@ -1537,6 +1537,11 @@ img.mfp-img {
   padding: 0px !important;
 }
 
+.puplish-date-name {
+  color: #FF928E;
+  font-size: 11px;
+}
+
 .top_bar {
   background-color: #242F46;
   height: 50px;
@@ -5561,5 +5566,96 @@ img.mfp-img {
   color: #586582;
   line-height: 25px;
   letter-spacing: 6.5%;
+}
+
+.blog-slider-area .blog-slider .blogslider {
+  -webkit-box-shadow: 0px 4px 30px rgba(241, 89, 89, 0.1);
+          box-shadow: 0px 4px 30px rgba(241, 89, 89, 0.1);
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-slide {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 23px;
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-slide .blog-slider-box {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .blog-slider-area .blog-slider .blogslider .swiper-slide .blog-slider-box {
+    width: 90%;
+    margin: 0 0 0 auto;
+  }
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-slide .blog-slider-box .blog-slider-content p {
+  color: #586582;
+  margin: 0;
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-button-next, .blog-slider-area .blog-slider .blogslider .swiper-button-prev {
+  padding: 20px 32px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(241, 89, 89, 0.1);
+          box-shadow: 0px 0px 30px rgba(241, 89, 89, 0.1);
+  height: auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-button-next::after, .blog-slider-area .blog-slider .blogslider .swiper-button-prev::after {
+  display: none;
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-button-next i, .blog-slider-area .blog-slider .blogslider .swiper-button-prev i {
+  font-size: 24px;
+  color: #F15959;
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-button-next:hover, .blog-slider-area .blog-slider .blogslider .swiper-button-prev:hover {
+  background-color: #F15959;
+}
+
+.blog-slider-area .blog-slider .blogslider .swiper-button-next:hover i, .blog-slider-area .blog-slider .blogslider .swiper-button-prev:hover i {
+  color: #fff;
+}
+
+.bolg-area .header-content p {
+  width: 100%;
+  color: #586582;
+}
+
+@media (min-width: 768px) {
+  .bolg-area .header-content p {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.bolg-area .blog-box {
+  padding: 25px 20px;
+  background-color: #fff;
+  border-radius: 23px;
+  -webkit-box-shadow: 0px 4px 30px rgba(241, 89, 89, 0.1);
+          box-shadow: 0px 4px 30px rgba(241, 89, 89, 0.1);
+  margin: 20px 10px;
+}
+
+.bolg-area .blog-box .blog-area {
+  padding: 15px 0 0px 0;
+}
+
+.bolg-area .blog-box .blog-area h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #242F46;
+}
+
+.bolg-area .blog-box .blog-excerpt p {
+  color: #586582;
+  margin: 5px 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */
