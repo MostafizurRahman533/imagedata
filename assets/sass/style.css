@@ -5658,4 +5658,77 @@ img.mfp-img {
   color: #586582;
   margin: 5px 0 0 0;
 }
+
+.blog-details-area {
+  margin: 60px 0;
+}
+
+.blog-details-area .blog-details .publisher-name {
+  padding: 10px 0;
+}
+
+.blog-details-area .blog-details .publisher-name span {
+  font-size: 12px;
+  color: #242F46;
+}
+
+.blog-details-area .blog-details .details-content p {
+  color: #586582;
+}
+
+.blog-details-area .blog-details .details-content p a {
+  color: #F15959;
+}
+
+.blog-details-area .blog-details .details-content p a:hover {
+  text-decoration: underline;
+}
+
+.blog-details-area .blog-details .details-content .nulist li {
+  color: #242F46;
+  list-style-type: upper-number;
+  padding: 2px 0;
+}
+
+.blog-details-area .blog-details .details-content .nulist li a {
+  color: #F15959;
+}
+
+.blog-details-area .blog-details .details-content .nulist li a:hover {
+  text-decoration: underline;
+}
+
+.blog-details-area .blog-details .details-content .list li {
+  color: #242F46;
+  list-style-type: disc;
+  padding: 2px 0;
+}
+
+.blog-details-area .blog-details .details-content .list li a {
+  color: #F15959;
+}
+
+.blog-details-area .blog-details .details-content .list li a:hover {
+  text-decoration: underline;
+}
+
+.blog-details-area .recent-post-area .recent-post-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 4px 29px rgba(241, 89, 89, 0.1);
+          box-shadow: 0px 4px 29px rgba(241, 89, 89, 0.1);
+}
+
+.blog-details-area .recent-post-area .recent-post-box .post-content .post-header h4 {
+  font-size: 22px;
+  color: #242F46;
+}
+
+.blog-details-area .recent-post-area .recent-post-box .post-content .publish-date-authour {
+  color: #FF928E;
+  font-size: 12px;
+  line-height: 15px;
+}
 /*# sourceMappingURL=style.css.map */
