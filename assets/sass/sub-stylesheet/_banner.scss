@@ -1,6 +1,9 @@
 //*===== banner area start ====*//
 .banner{
-    margin: 80px 0;
+    margin: 15px 0;
+    @include breakpoint(sm){
+        margin: 80px 0;
+    }
     .banner-left{
         .header-content{
             h3{

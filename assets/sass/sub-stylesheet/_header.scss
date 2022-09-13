@@ -66,12 +66,11 @@
                         p{
                             font-size: $fs-header;
                             font-weight: 700;
-                            color: $theme-dark2;
+                            color: $title-color;
                             letter-spacing: 1px;
-                            padding: 10px 0 0 20px;
-                            margin: 0;
+                            padding: 23px 0 0 20px;
                             span{
-                                color: $theme-light2;
+                                color: $theme-color;
                             }
                         }
                     }
@@ -104,11 +103,12 @@
                         align-items: center;
                         .list-menu.open{
                             left: 0;
+                            overflow-y: scroll;
                         }
                         .list-menu{
                             position: absolute;
                             top: 0;
-                            background-image: linear-gradient( $theme-dark2);
+                            background-color: $theme-dark2;
                             width: 280px;
                             text-align: left;
                             height: 100vh;
@@ -121,12 +121,18 @@
                                 list-style: none;
                                 cursor: pointer;
                                 font-size: $fs-body;
-                                display: flex;
+                                display: block;
                                 justify-content: space-between;
                                 padding: 12px 14px;
                                 position: relative;
                                 transition: all 0.3s ease-in-out;
                                 color: white;
+                                width: 100%;
+                                @include breakpoint(lg){
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: auto;
+                                }
                                 &:nth-child(2){
                                     &:hover{
                                         &::after{
@@ -139,20 +145,32 @@
                                         margin: 8px 10px;
                                         transform: rotate(-135deg);
                                         transition: all 0.3s ease-in-out;
-                                        
                                         }
                                         .down-menu1{
                                             top: 30px;
                                             left: 0px;
-                                            width: 200px !important;
+                                            width: 260px !important;
                                             height: 100%;
                                             transition: all 0.3s ease-in-out;
                                             transform: scaley(1);
+                                            border: 0px solid $title-color;
+                                            @include breakpoint(lg){
+                                                border: 2px solid $title-color;                                            
+                                            }
                                             ul{
                                                 color: $theme-light2;
+                                                padding: 0px;
+                                                @include breakpoint(lg){
+                                                    padding-left: 2rem;
+                                                }
                                                 li{
                                                     height: auto;
-                                                    margin-left: 10px;
+                                                    padding: 5px 0 10px 0;
+                                                    margin: 5px 0;
+                                                    background-color: #071f5a;
+                                                    @include breakpoint(lg){
+                                                        background-color: transparent;
+                                                    }
                                                     a{
                                                         color: white;
                                                         font-size: $fs-body;
@@ -175,16 +193,6 @@
                                                 color: white; 
                                             }
                                             @include breakpoint (lg){
-                                                &::after{
-                                                    content: '';
-                                                    position: absolute;
-                                                    height: 20px;
-                                                    width: 20px;
-                                                    background-color: white;
-                                                    top: -7px;
-                                                    left: 50%;
-                                                    transform: rotate(45deg);
-                                                }
                                             }
                                             .drop-aling{
                                                 display: block;
@@ -206,7 +214,7 @@
                                                             margin: 5px 0;
                                                             font-weight: 300;
                                                             line-height: 20px;
-                                                            font-size: 14px;
+                                                            font-size: $fs-body;
                                                             color: $theme-dark;
                                                             &:hover{
                                                                 background-color: $theme-color-trans;
@@ -325,7 +333,7 @@
                                         .down-menu2{
                                             top: 30px;
                                             left: 0px;
-                                            width: 150px !important;
+                                            width: 260px !important;
                                             height: 100%;
                                             transition: all 0.3s ease-in-out;
                                             transform: scaley(1);
@@ -335,7 +343,12 @@
                                                 padding: 0;
                                                 li{
                                                     height: auto;
-                                                    margin-left: 10px;
+                                                    padding: 5px 0 10px 0;
+                                                    margin: 5px 0;
+                                                    background-color: #071f5a;
+                                                    @include breakpoint(lg){
+                                                        background-color: transparent;
+                                                    }
                                                     a{
                                                         color: white;
                                                         font-size: $fs-body;
@@ -358,7 +371,6 @@
                                                 color: white; 
                                             }
                                             @include breakpoint (lg){
-                                                
                                                 
                                             }
                                             .drop-aling{
@@ -418,8 +430,13 @@
                                     padding: 5px;
                                     transform: rotate(45deg);
                                     transition: all 0.3s ease-in-out;
+                                    position: absolute;
+                                    top: 5px;
+                                    right: 5px;
                                     @include breakpoint (lg){
                                         padding: 0x;
+                                        position: relative;
+                                        top: 2px;
                                     }
                                 }
                                 .down-menu1{
@@ -467,7 +484,7 @@
                                     transition: all 0.3 ease-in-out;
                                     padding: 10px;
                                     @include breakpoint (lg){
-                                        width: 232px !important;
+                                        width: auto !important;
                                     }
                                     li{
                                         list-style: none;
@@ -522,7 +539,7 @@
                                     position: relative;
                                     color: $theme-dark;
                                     list-style: none;
-                                    &:nth-child(6){
+                                    &:nth-child(2){
                                         &:hover{
                                             &::after{
                                             display: block;
@@ -638,13 +655,13 @@
                                 }
                                 .normal-list{
                                     list-style: none;
-                                    padding: 20px 20px;
+                                    padding: 30px 20px;
                                     a{
                                         color: $theme-dark2;
                                         text-decoration: none;
                                     }
                                     &:nth-last-child(1){
-                                        padding: 20px 5px;
+                                        padding: 30px 5px;
                                         a{
                                             background-color: $theme-color;
                                             padding: 8px 14px;
@@ -741,11 +758,12 @@
                     align-items: center;
                     .list-menu.open{
                         left: 0;
+                        overflow-y: scroll;
                     }
                     .list-menu{
                         position: absolute;
                         top: 0;
-                        background-image: linear-gradient( $theme-dark2);
+                        background-color: $theme-dark2;
                         width: 280px;
                         text-align: left;
                         height: 100vh;
@@ -758,12 +776,18 @@
                             list-style: none;
                             cursor: pointer;
                             font-size: $fs-body;
-                            display: flex;
+                            display: block;
                             justify-content: space-between;
                             padding: 12px 14px;
                             position: relative;
                             transition: all 0.3s ease-in-out;
                             color: white;
+                            width: 100%;
+                            @include breakpoint(lg){
+                                display: flex;
+                                justify-content: space-between;
+                                width: auto;
+                            }
                             &:nth-child(2){
                                 &:hover{
                                     &::after{
@@ -776,21 +800,32 @@
                                     margin: 8px 10px;
                                     transform: rotate(-135deg);
                                     transition: all 0.3s ease-in-out;
-                                    
                                     }
                                     .down-menu1{
                                         top: 30px;
                                         left: 0px;
-                                        width: 200px !important;
+                                        width: 260px !important;
                                         height: 100%;
                                         transition: all 0.3s ease-in-out;
                                         transform: scaley(1);
-                                        border: 2px solid $title-color;
+                                        border: 0px solid $title-color;
+                                        @include breakpoint(lg){
+                                            border: 2px solid $title-color;                                            
+                                        }
                                         ul{
                                             color: $theme-light2;
+                                            padding: 0px;
+                                            @include breakpoint(lg){
+                                                padding-left: 2rem;
+                                            }
                                             li{
                                                 height: auto;
-                                                margin-left: 10px;
+                                                padding: 5px 0 10px 0;
+                                                margin: 5px 0;
+                                                background-color: #071f5a;
+                                                @include breakpoint(lg){
+                                                    background-color: transparent;
+                                                }
                                                 a{
                                                     color: white;
                                                     font-size: $fs-body;
@@ -953,7 +988,7 @@
                                     .down-menu2{
                                         top: 30px;
                                         left: 0px;
-                                        width: 150px !important;
+                                        width: 260px !important;
                                         height: 100%;
                                         transition: all 0.3s ease-in-out;
                                         transform: scaley(1);
@@ -963,7 +998,12 @@
                                             padding: 0;
                                             li{
                                                 height: auto;
-                                                margin-left: 10px;
+                                                padding: 5px 0 10px 0;
+                                                margin: 5px 0;
+                                                background-color: #071f5a;
+                                                @include breakpoint(lg){
+                                                    background-color: transparent;
+                                                }
                                                 a{
                                                     color: white;
                                                     font-size: $fs-body;
@@ -1045,8 +1085,13 @@
                                 padding: 5px;
                                 transform: rotate(45deg);
                                 transition: all 0.3s ease-in-out;
+                                position: absolute;
+                                top: 5px;
+                                right: 5px;
                                 @include breakpoint (lg){
                                     padding: 0x;
+                                    position: relative;
+                                    top: 2px;
                                 }
                             }
                             .down-menu1{
@@ -1094,7 +1139,7 @@
                                 transition: all 0.3 ease-in-out;
                                 padding: 10px;
                                 @include breakpoint (lg){
-                                    width: 232px !important;
+                                    width: auto !important;
                                 }
                                 li{
                                     list-style: none;

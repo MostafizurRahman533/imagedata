@@ -62,7 +62,10 @@
 // ** about style end ** //
 // ** service style start ** //
 .service-box{
-    margin: 100px 0;
+    margin: 100px 10px;
+    @include breakpoint(sm){
+        margin: 100px 0;
+    }
     .row{
         background-color: $white-color;
         padding: 30px;
@@ -73,6 +76,10 @@
             box-shadow: 0px 5px 79px rgba(241, 89, 89, 0.1);
         }
         .service-content{
+            margin: 20px 0 0 0;
+            @include breakpoint(sm){
+                margin: 0px 0; 
+            }
             .service-header{
                 h4{
                     font-size: $fs-header;
@@ -536,7 +543,7 @@
             margin: 30px 0;
         }
         form{
-            input, textarea{
+            input, textarea, select{
                 border-radius: $border-radius-lg;    
                 border-top-right-radius: $border-radius-lg !important;
                 border-bottom-right-radius: $border-radius-lg !important;
@@ -556,6 +563,22 @@
                     opacity: 0.8;
                     font-size: $fs-small;
                 }
+               
+            }
+            select{
+                color: $text-color !important;
+                opacity: 0.8;
+                font-size: $fs-small !important;
+            }
+            .form-control{
+                color: $text-color !important;
+                opacity: 0.8;
+                font-size: $fs-small !important;
+            }
+            .form-label{
+                font-size: $fs-x-small;
+                opacity: 0.8;
+                color: $text-color;
             }
             textarea{
                 &:focus{
@@ -2083,13 +2106,12 @@
                     color: $title-color;
                     list-style-type: upper-number;
                     padding: 2px 0;
-                    
-                a{
-                    color: $theme-color;
-                    &:hover{
-                        text-decoration: underline;
+                    a{
+                        color: $theme-color;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
-                }
                 }
             }
             .list{
@@ -2105,21 +2127,35 @@
                     }
                 }
             }
-        }
+        } 
     }
     .recent-post-area{
         .recent-post-box{
             background-color: $white-color;
             padding: 15px;
             border-radius: $border-radius-av;
-            margin-bottom: 25px;
+            margin: 15px 0 25px 0;
             box-shadow: 0px 4px 29px rgba(241, 89, 89, 0.1);
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                box-shadow: 0px 4px 55px rgba(178, 122, 250, 0.1);
+            }
+           
             .post-content{
                 .post-header{
-                    h4{
-                        font-size: 22px;
-                        color: $title-color;
+                    a{
+                        h4{
+                            font-size: 22px;
+                            color: $title-color;
+                            transition: all 0.2s ease-in-out;
+                        }
+                        &:hover{
+                            h4{
+                                color: $theme-color;
+                            }
+                        }
                     }
+                    
                 }
                 .publish-date-authour{
                     color:  #FF928E;
@@ -2128,9 +2164,137 @@
                 }
             }
         }
+            
+    }
+    .popular-area{
+        .popular-post-card{
+            background-color: $white-color;
+            padding: 23px;
+            border-radius: $border-radius-av;
+            margin: 15px 0 25px 0;
+            box-shadow: 0px 4px 29px rgba(241, 89, 89, 0.1);
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                box-shadow: 0px 4px 55px rgba(178, 122, 250, 0.1);
+            }
+            .cart-title{
+                a{
+                    h4{
+                        font-size: 22px;
+                        color: $title-color;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &:hover{
+                        h4{
+                            color: $theme-color;
+                        }
+                    } 
+                }
+            }
+            .cart-author{
+                color:  #FF928E;
+                font-size: $fs-small;
+                line-height: 15px;
+                padding: 5px 0  10px 0;
+            }
+            .cart-content{
+                p{
+                    color: $text-color;
+                    line-height: 25px;
+                }
+            }
+            .post-hash-tag{
+                p{
+                    text-align: right;
+                    transition: all 0.2s ease-in-out;
+                    span{
+                        padding: 4px 7px;
+                        background-color:#F159591A;
+                        transition: all 0.2s ease-in-out;
+                        a{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
     }
 } 
 // ** blog-details area end ** // 
+// ** pricing-area area start ** // 
+.pricing-area{
+    .pricing-cart{
+            background-color: $white-color;
+            border-radius: $border-radius-av;
+            padding: 15px;
+            margin: 15px 0 45px 0;
+            box-shadow: 0px 4px 29px rgba(241, 89, 89, 0.1);
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                box-shadow: 0px 4px 55px rgba(178, 122, 250, 0.1);
+            }
+           .pricing-image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                min-width: 125px;
+                @include breakpoint(sm){
+                    justify-content: start;
+                    align-items: center;
+                }            
+           }
+           .pricing-content{
+            text-align: center;
+            margin: 20px 0 0 0px;
+            @include breakpoint(lg){
+                text-align: left;
+                margin: 0 0 0 20px;
+            }
+            p{
+                color: $text-color;
+                margin: 0;
+                font-size: $fs-body
+            }
+        }
+        .pricing-box-area{
+            .pricing-box{
+                background-color: $white-color;
+                border-radius: $border-radius-sm;
+                padding: 10px;
+                box-shadow: 0px 4px 29px rgba(241, 89, 89, 0.1);
+                transition: all 0.2s ease-in-out;
+                text-align: center;
+                min-width: 100px;
+                margin: 0 10px;
+                a{
+                    color: $theme-color;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                p{
+                    margin: 0;
+                    color: $theme-color;
+                    padding: 4px 8px;
+                    background-color: #F159591A;
+                    border-radius: 5px;
+                }
+                span{
+                    color: $text-color;
+                    padding: 8px 0;
+                }
+                h5{
+                    font-size: $fs-h4;
+                    line-height: 25px;
+                    margin: 0;
+                }
+            }
+        }
+        
+    }
+}
+// ** pricing-area area end ** // 
 
 
 

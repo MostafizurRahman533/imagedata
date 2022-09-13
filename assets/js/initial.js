@@ -31,7 +31,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 var swiper = new Swiper(".clientSwiper", {
-slidesPerView: 1,
+slidesPerView: 2,
 spaceBetween: 10,
 navigation: {
         nextEl: ".swiper-button-next",
