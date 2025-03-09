@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- <link rel="preload" href="assets/sass/style.css" as="style"> --> 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/sass/style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <!-- header area start -->
+    <section id="header">
+        <div class="top_bar">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="top-left d-flex"> 
+                        <a href="mailto:imagedatait@gmail.com"><i class="fas fa-envelope-open"></i> imagedatait@gmail.com</a> &nbsp;&nbsp;
+                        <a href="tel:+880 1800 000000"><i class="fa-solid fa-phone"></i>+880 1800 000000</a>
+                    </div>
+                    <div class="top-right d-flex">
+                        <a href="login.html"><i class="fa-solid fa-user"></i> Log In</a> &nbsp;&nbsp; 
+                        <a href="registration.html"><i class="fa-solid fa-user-plus"></i> Registration</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navarea">
+            <header class="container">
+                <div class="menu-area">
+                    <div class="menu-logo">
+                        <a href="index.html">
+                            <img src="assets/images/top_page/logo/logo.svg" alt="n/a">
+                            <p>Image Data</p>
+                        </a>
+                    </div>
+                    <div class="main-menu">
+                        <div class="overlay"></div>
+                        <div class="menus">
+                            <ul class="list-menu">
+                                <li class="normal-list"><a href="about.html">About Us</a></li>
+                                <li class="drop-list">Service
+                                    <div class="down-menu1">
+                                        <div class="drop-aling">
+                                            <ul class="design-drop">  
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/e-commerce.svg" alt=""> &nbsp;&nbsp; E-Commerce Image Editing </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/clipping path.svg" alt=""> &nbsp;Clipping Path Sercive </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/background-remove.svg" alt=""> &nbsp;&nbsp;&nbsp;Background Remove </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/maskin.svg" alt=""> &nbsp;&nbsp; &nbsp;Image Masing </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/shadow.svg" alt=""> &nbsp; Meaking Shadow </a></li>
+                                                
+                                            </ul>
+                                            <ul class="appliacation-drop">
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/color-correction.svg" alt=""> &nbsp;&nbsp; Color Correction  </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/retouching.svg" alt=""> &nbsp;Photo Restoration  </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/real-state.svg" alt=""> &nbsp;&nbsp;&nbsp;Real State </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/jewelry.svg" alt=""> &nbsp;&nbsp; &nbsp;Jewelry Retouch  </a></li>
+                                                <li><a href="service_details.html"><img src="assets/images/top_page/logo/mennequin.svg" alt=""> &nbsp; Ghost Mennequin</a></li>                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="normal-list"><a href="pricing.html">Pricing</a></li>
+                                <li class="normal-list"><a href="portfolio.html">Portfolio</a></li>
+                                <li class="normal-list"><a href="blog.html">Blog</a></li>
+                                <li class="drop-list">Order
+                                    <div class="down-menu2">
+                                        <div class="drop-aling">
+                                            <ul class="design-drop"> 
+                                                <li><a href="trail.html"><img src="assets/images/top_page/logo/free-trial.svg" alt="n/a"> Free Trial </a></li>
+                                                <li><a href="quote.html" class="text-nowrap"><i class="fa-solid fa-arrow-right-to-bracket"></i> Order Now</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="normal-list"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                            <div class="menu-bar">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+    </section>
+    <!-- header area end-->
+    <!-- dashboard area start-->
+    <section class="user-dashboard-area">
+        <div class="container">
+            <div class="dashboard-bg">
+                <div class="header-area">
+                    <h3>Dashboard</h3>
+                    <p>You can add your Order to send through your dashboard and check job status anytime.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <!--nav tab button-->
+                        <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100 active" id="dashboard-tab" data-bs-toggle="tab"
+                                    data-bs-target="#deshboard-pane" type="button" role="tab" aria-controls="dashboard-tab-pane"
+                                    aria-selected="true"><span>Deshboard</span> <img src="assets/images/deshboard/iw1.svg" alt="n/a"
+                                        class="icon-white"> <img src="assets/images/deshboard/io1.svg" alt="n/a" class="icon-orange"></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100" id="create-tab" data-bs-toggle="tab"
+                                    data-bs-target="#create-pane" type="button" role="tab" aria-controls="create-tab-pane"
+                                    aria-selected="false"><span>Create Order</span> <img src="assets/images/deshboard/iw2.svg" alt="n/a"
+                                        class="icon-white"> <img src="assets/images/deshboard/io2.svg" alt="n/a" class="icon-orange"></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100" id="pending-tab" data-bs-toggle="tab"
+                                    data-bs-target="#pending-pane" type="button" role="tab" aria-controls="pending-tab-pane"
+                                    aria-selected="false"><span>Pending Orders</span> <img src="assets/images/deshboard/iw3.svg" alt="n/a"
+                                        class="icon-white"> <img src="assets/images/deshboard/io3.svg" alt="n/a" class="icon-orange"></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100" id="process-tab" data-bs-toggle="tab"
+                                    data-bs-target="#process-pane" type="button" role="tab" aria-controls="process-tab-pane"
+                                    aria-selected="false"><span>In Process</span> <img src="assets/images/deshboard/iw5.svg" alt="n/a"
+                                        class="icon-white"> <img src="assets/images/deshboard/io5.svg" alt="n/a" class="icon-orange"></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100" id="hold-tab" data-bs-toggle="tab"
+                                    data-bs-target="#hold-pane" type="button" role="tab" aria-controls="hold-tab-pane"
+                                    aria-selected="false"><span>Hold Orders</span><img src="assets/images/deshboard/iw7.svg" alt="n/a"
+                                        class="icon-white"> <img src="assets/images/deshboard/io7.svg" alt="n/a" class="icon-orange"></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100" id="cancel-tab" data-bs-toggle="tab"
+                                    data-bs-target="#cencel-pane" type="button" role="tab" aria-controls="cancel-tab-pane"
+                                    aria-selected="false"><span>Cancel Orders</span> <img src="assets/images/deshboard/iw4.svg" alt="n/a"
+                                        class="icon-white"> <img src="assets/images/deshboard/io4.svg" alt="n/a" class="icon-orange"></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100" id="complete-tab" data-bs-toggle="tab"
+                                    data-bs-target="#complete-pane" type="button" role="tab" aria-controls="complete-tab-pane"
+                                    aria-selected="false"><span>Complete Orders</span> <img src="assets/images/deshboard/iw6.svg" alt="n/a"
+                                        class="icon-white"> <img src="assets/images/deshboard/io6.svg" alt="n/a" class="icon-orange"> </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex justify-content-between w-100" id="setting-tab" data-bs-toggle="tab"
+                                    data-bs-target="#setting-pane" type="button" role="tab" aria-controls="setting-tab-pane"
+                                    aria-selected="false"><span>Settings</span> <img src="assets/images/deshboard/iw8.svg" alt="n/a"
+                                    class="icon-white"> <img src="assets/images/deshboard/io8.svg" alt="n/a" class="icon-orange"></button>
+                            </li>
+                        </ul>
+                        <!--nav tab button-->
+                    </div>
+                    <div class="col-md-9">
+                        <!--nav tab content-->
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="deshboard-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-6">
+                                        <!-- small box -->
+                                        <div class="deshboard-box">
+                                            <div class="inner">
+                                                <h3 id="client_pending_orders">0</h3>
+                                                <p>Pending Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/deshboard/io1.svg" alt="n/a" class="icon-orange">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-6">
+                                        <!-- small box -->
+                                        <div class="deshboard-box">
+                                            <div class="inner">
+                                                <h3 id="client_pending_orders">0</h3>
+                                                <p>Working In Process</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/deshboard/io5.svg" alt="n/a" class="icon-orange">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6  col-xs-6">
+                                        <!-- small box -->
+                                        <div class="deshboard-box">
+                                            <div class="inner">
+                                                <h3 id="client_pending_orders">0</h3>
+                                                <p>Complete Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/deshboard/io6.svg" alt="n/a" class="icon-orange">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6  col-xs-6">
+                                        <!-- small box -->
+                                        <div class="deshboard-box">
+                                            <div class="inner">
+                                                <h3 id="client_pending_orders">0</h3>
+                                                <p>Cencel Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/deshboard/io4.svg" alt="n/a" class="icon-orange">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="create-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                <form action="">
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-2 col-form-label">Job Type</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" aria-label="Default select example">
+                                                <option selected="">Select your Sercive</option>
+                                                <option value="1">Clipping</option>
+                                                <option value="2">Masking</option>
+                                                <option value="3">Background-remove</option>
+                                                <option value="4">Image Masking</option>
+                                                <option value="5">Image Shadow</option>
+                                                <option value="6">color-correction</option>
+                                                <option value="7">Photo Restoration</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-2 col-form-label">Image Quantity</label>
+                                            <div class="col-sm-10">
+                                                <input type="number" class="form-control" name="quantity" placeholder="Quantity">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-2 col-form-label">Delivery Date</label>
+                                            <div class="col-sm-10">
+                                                <input type="date" class="form-control" name="" >
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-2 col-form-label">Image Destination</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="" placeholder="Photo Destination (EX: Dropbox files shareable links)">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-2 col-form-label">Job Description</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Photo Destination"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-2 col-form-label"></label>
+                                            <div class="col-sm-10 mx-end">
+                                                <button class="btn btn-trail btn-submit" type="submit">Send <i class="fa-solid fa-arrow-right-long"></i></button>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pending-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <table class="table table-responsive table-hover ">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col"># Sl</th>
+                                        <th>Job Order</th>
+                                        <th>Quantity</th>
+                                        <th>Delivary Date</th>
+                                        <th>Order Date</th>
+                                        <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="process-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                               <table class="table table-responsive table-hover ">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col"># Sl</th>
+                                        <th>Job Order</th>
+                                        <th>Quantity</th>
+                                        <th>Delivary Date</th>
+                                        <th>Order Date</th>
+                                        <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="hold-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <table class="table table-responsive table-hover ">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col"># Sl</th>
+                                        <th>Job Order</th>
+                                        <th>Quantity</th>
+                                        <th>Delivary Date</th>
+                                        <th>Order Date</th>
+                                        <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="cencel-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <table class="table table-responsive table-hover ">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col"># Sl</th>
+                                        <th>Job Order</th>
+                                        <th>Quantity</th>
+                                        <th>Delivary Date</th>
+                                        <th>Order Date</th>
+                                        <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="complete-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <table class="table table-responsive table-hover ">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col"># Sl</th>
+                                        <th>Job Order</th>
+                                        <th>Quantity</th>
+                                        <th>Delivary Date</th>
+                                        <th>Order Date</th>
+                                        <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> service Item Name</td>
+                                            <td> Link of the dropbox / Number Of quantity '12, 52, 86'</td>
+                                            <td> 25/09/2023</td>
+                                            <td>25/05/2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium fugiat molestiae fuga quasi!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="setting-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <form action="">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-2 col-form-label">Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="quantity" placeholder="Name" value="Md Fahad">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" name="" placeholder="Eamil" value="mdfahad01618@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-2 col-form-label">Your Photo</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-2 col-form-label">Current Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" name="" readonly value="213565213">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-2 col-form-label">New Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" name="">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-2 col-form-label">Re-Type New Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" name="">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-2 col-form-label"></label>
+                                        <div class="col-sm-10 mx-end">
+                                            <button class="btn btn-trail btn-submit" type="submit">Update <i
+                                                    class="fa-solid fa-arrow-right-long"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--nav tab content-->
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dashboard area end-->
+
+    <!-- footer area start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="subscribe-area">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sectio-header">
+                            <h3>Subscribe now</h3>
+                            <p>Lorem Ipsum Dummy text.Lorem Ipsum Dummy text.Lorem Ipsum Dummy text.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-subscribe-form">
+                            <form action="" method="">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <button class="input-group-text" type="submit" id="basic-addon2">Subscribe</button>
+                            </div>
+                            </form>    
+                        </div>
+                        <div class="footer-order-btn-area">
+                            <a href="#0" class="btn btn-order"> Order Now</a>
+                            <a href="#0" class="btn btn-trail"> Free Trial</a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-area">
+            <div class="container">
+                <div class="footer-middle">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-about-area">
+                                <div class="logo d-flex align-items-center">
+                                    <img src="assets/images/top_page/logo/logo.svg" alt="n/a">
+                                    <h3> &nbsp; Get In Touch</h3>
+                                </div>
+                                <div class="footer-contact-links">
+                                    <div class="phone">
+                                        <a href="tel:+880 1800 000000"><i class="fa-solid fa-phone"></i> +880 1800 000000</a>
+                                    </div>
+                                    <div class="location">
+                                        <a href="#0"><i class="fa-solid fa-location-dot"></i> House: 16, Road: 45, Block: G, Shyamoli , Dhaka -1207</a>
+                                    </div>
+                                    <div class="email">
+                                        <a href="mailto:imagedatait@gmail.com"><i class="fas fa-envelope-open"></i> something@gmail.com</a>
+                                    </div>
+                                    <div class="social">
+                                        <a href="#0" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#0" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                                        <a href="#0" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#0" class="pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                                        <a href="#0" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#0" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-links">
+                                <h3>ReSource</h3>
+                                <ul class="footer-link-area">
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Our Projects</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Portfolio</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-links">
+                                <h3>ReSource</h3>
+                                <ul class="footer-link-area">
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Our Projects</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Portfolio</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-links">
+                                <h3>ReSource</h3>
+                                <ul class="footer-link-area">
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Our Projects</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> Portfolio</a></li>
+                                    <li><a href="#0"><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-md-start text-center">
+                            <p>Design & Develop by: <a href="#0">a2itechnology.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-md-center text-center">
+                            All Right Reserve <i class="fa-solid fa-copyright"></i> <a href="#0">Image Data</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-md-end text-center">
+                            <div class="d-flex justify-content-md-end justify-content-center align-items-center">
+                                <p>We Accept:</p>
+                                <img src="assets/images/top_page/footer/master.svg" class="img-fluid ms-2" alt="n/a">
+                                <img src="assets/images/top_page/footer/pay.svg" class="img-fluid ms-2" alt="n/a">
+                                <img src="assets/images/top_page/footer/visa.svg" class="img-fluid ms-2" alt="n/a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-top scrollToTop">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end-->
+    <!--js file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/acf37c162d.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/counterup2.js"></script>
+    <script src="assets/js/functtion.js"></script>
+    <script type="module" src="assets/js/initial.js"></script>
+    <!-- Swiper JS -->
+    <script src="node_modules/swiper/swiper-bundle.js"></script>   
+    <script>
+        $(document).ready(function(){
+  
+  $('.js-gallery').slickLightbox({
+    src: 'src',
+    itemSelector: '.js-gallery-popup img',
+    background: 'rgba(0, 0, 0, .7)'
+  });
+});
+
+var btnArray = document.querySelectorAll('.from-check-service');
+var btnArray2 = document.querySelectorAll('.from-check-time');
+var service_select = document.querySelector('.service-select');
+var totalprint = document.querySelector('.total');
+var tabpane = document.querySelectorAll('.tab-pane');
+var navlink = document.querySelectorAll('.nav-link');
+var focbtn, focbtn2;
+var radios = document.getElementsByTagName("input");
+var infile = document.querySelector('input[type=file]');
+var btnsubmit = document.querySelector('.btn-submit');
+function btnEvent() {
+    for ( var i = 0; i < btnArray.length; i++) {
+        if(btnArray[i].checked==true){
+            console.log(focbtn);
+            focbtn = null; 
+            break;
+        }
+        else{
+            focbtn = btnArray[i];
+        }
+    };
+      
+    if(focbtn == null){
+        //console.log("null");
+        //btnsubmit.setAttribute('type', 'submit');
+        for ( var i = 0; i < btnArray2.length; i++) {
+            if(btnArray2[i].checked==true){
+                console.log(btnArray2[i]);
+                focbtn2 = null; 
+                break;
+            }
+            else{
+                focbtn2 = btnArray2[i];
+            }
+        };
+        if(focbtn2 == null){
+            btnsubmit.setAttribute('type', 'submit');
+        }
+        else{
+            btnArray2[0].focus();
+        }
+    }
+
+    else{
+        service_select.classList.add('open');
+        for ( var i = 0; i < navlink.length; i++) {
+            navlink[i].classList.remove('active');
+        };
+        for ( var i = 0; i < tabpane.length; i++) {
+            tabpane[i].classList.remove('active');
+            tabpane[i].classList.remove('show');
+        }
+        tabpane[0].classList.add('active');
+        navlink[0].classList.add('active');
+        tabpane[0].classList.add('show');
+        btnArray[0].focus();
+    }
+	// to write focus in input field
+};
+function choose(){
+    if(service_select.classList.contains('open')){
+        service_select.classList.remove('open');
+    }
+    else{
+        service_select.classList.toggle('open');
+    }
+}
+for ( var i = 0; i < btnArray.length; i++) {
+	btnArray[i].addEventListener('click', calculateTotal, false);
+};
+for ( var i = 0; i < btnArray2.length; i++) {
+	btnArray2[i].addEventListener('click', calculateTotal, false);
+};
+document.querySelector('input[type="file"]').addEventListener("change", calculateTotal);
+function calculateTotal(){
+    var infiles = infile.files.length;
+    var totala = 0,
+        i;
+    
+    for (i = 0; i < radios.length; i++) {
+        if (radios[i].type == 'radio' && radios[i].checked) {
+            totala += Number(radios[i].value);
+        }
+    }
+      if(infiles == 0 ){
+        infiles = 1;
+      } 
+      if( totala == 0){
+        alert("Please select a service")
+      }
+    totalprint.innerHTML = totala * infiles;
+    return false; 
+}
+
+function inputfile(){
+    var infiles = infile.files.length;
+    var totala = 0,
+        i;
+    
+    for (i = 0; i < radios.length; i++) {
+        if (radios[i].type == 'radio' && radios[i].checked) {
+            totala += Number(radios[i].value);
+        }
+    }
+    if(totala == 0){
+        totala = 1;
+      } 
+       
+    totalprint.innerHTML = totala * infiles;
+    console.log(infile.files.length);
+    return false;     
+}
+
+
+    </script> 
+    
+</body>
+</html>

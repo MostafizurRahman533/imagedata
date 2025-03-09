@@ -7,232 +7,232 @@ pagescrollvalid = window.pageYOffset;
 function pagescroll() {
   var pageup = window.pageYOffset;
   var header = document.getElementById('header');
-  if(pagescrollvalid && pageup == 0){
+  if (pagescrollvalid && pageup == 0) {
     header.classList.remove("fixed");
     header.classList.remove("top-bar");
   }
-  else if(pagescrollvalid > pageup){
+  else if (pagescrollvalid > pageup) {
     header.classList.add("fixed");
   }
-  else if(pagescrollvalid < pageup){
+  else if (pagescrollvalid < pageup) {
     header.classList.add("top-bar");
     header.classList.remove("fixed");
   }
-  else{
+  else {
     header.classList.remove("fixed");
-  } 
+  }
   pagescrollvalid = pageup;
 }
 
 
 
 
-  // juery js 
-  (function($){
-    'use strict';
-    	// mobile menu responsive
-      $(document).on('click','.menu-bar',function(){
-        $(".list-menu").addClass("open");
-             //$(".main-menu").toggleClass("open");
-            $(".overlay").addClass("active");
-            $("body").addClass("overflow");
+// juery js 
+(function ($) {
+  'use strict';
+  // mobile menu responsive
+  $(document).on('click', '.menu-bar', function () {
+    $(".list-menu").addClass("open");
+    //$(".main-menu").toggleClass("open");
+    $(".overlay").addClass("active");
+    $("body").addClass("overflow");
+  });
+  //input filed function 
+  //counter up js  
+
+  var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
+
+  var $counters = $(".counter");
+
+  /* Start counting, do this on DOM ready or with Waypoints. */
+  $counters.each(function (ignore, counter) {
+    var waypoint = new Waypoint({
+      element: $(this),
+      handler: function () {
+        counterUp(counter, {
+          duration: 1000,
+          delay: 16
         });
-//input filed function 
-//counter up js  
+        this.destroy();
+      },
+      offset: 'bottom-in-view',
+    });
+  });
 
-var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
-    
-    	var $counters = $(".counter");
-    
-    	/* Start counting, do this on DOM ready or with Waypoints. */
-		$counters.each(function (ignore, counter) {
-			var waypoint = new Waypoint( {
-				element: $(this),
-				handler: function() { 
-					counterUp(counter, {
-						duration: 1000,
-						delay: 16
-					}); 
-					this.destroy();
-				},
-				offset: 'bottom-in-view',
-			} );
-		});
+  // comparison slider js
+  $(document).ready(function () {
 
-// comparison slider js
-$(document).ready(function() {
-	
-	// If the comparison slider is present on the page lets initialise it, this is good you will include this in the main js to prevent the code from running when not needed
-	if ($(".comparison-slider")[0]) {
-		let compSlider = $(".comparison-slider");
-	
-		//let's loop through the sliders and initialise each of them
-		compSlider.each(function() {
-			let compSliderWidth = $(this).width() + "px";
-			$(this).find(".resize img").css({ width: compSliderWidth });
-			drags($(this).find(".divider"), $(this).find(".resize"), $(this));
-		});
+    // If the comparison slider is present on the page lets initialise it, this is good you will include this in the main js to prevent the code from running when not needed
+    if ($(".comparison-slider")[0]) {
+      let compSlider = $(".comparison-slider");
 
-		//if the user resizes the windows lets update our variables and resize our images
-		$(window).on("resize", function() {
-			let compSliderWidth = compSlider.width() + "px";
-			compSlider.find(".resize img").css({ width: compSliderWidth });
-		});
-	}
-});
+      //let's loop through the sliders and initialise each of them
+      compSlider.each(function () {
+        let compSliderWidth = $(this).width() + "px";
+        $(this).find(".resize img").css({ width: compSliderWidth });
+        drags($(this).find(".divider"), $(this).find(".resize"), $(this));
+      });
 
-// This is where all the magic happens
-// This is a modified version of the pen from Ege Görgülü - https://codepen.io/bamf/pen/jEpxOX - and you should check it out too.
-function drags(dragElement, resizeElement, container) {
-	
-	// This creates a variable that detects if the user is using touch input insted of the mouse.
-	let touched = false;
-	window.addEventListener('touchstart', function() {
-		touched = true;
-	});
-	window.addEventListener('touchend', function() {
-		touched = false;
-	});
-	
-	// clicp the image and move the slider on interaction with the mouse or the touch input
-	dragElement.on("mousedown touchstart", function(e) {
-			
-			//add classes to the emelents - good for css animations if you need it to
-			dragElement.addClass("draggable");
-			resizeElement.addClass("resizable");
-			//create vars
-			let startX = e.pageX ? e.pageX : e.originalEvent.touches[0].pageX;
-			let dragWidth = dragElement.outerWidth();
-			let posX = dragElement.offset().left + dragWidth - startX;
-			let containerOffset = container.offset().left;
-			let containerWidth = container.outerWidth();
-			let minLeft = containerOffset + 10;
-			let maxLeft = containerOffset + containerWidth - dragWidth - 10;
-			
-			//add event listner on the divider emelent
-			dragElement.parents().on("mousemove touchmove", function(e) {
-				
-				// if the user is not using touch input let do preventDefault to prevent the user from slecting the images as he moves the silder arround.
-				if ( touched === false ) {
-					e.preventDefault();
-				}
-				
-				let moveX = e.pageX ? e.pageX : e.originalEvent.touches[0].pageX;
-				let leftValue = moveX + posX - dragWidth;
-
-				// stop the divider from going over the limits of the container
-				if (leftValue < minLeft) {
-					leftValue = minLeft;
-				} else if (leftValue > maxLeft) {
-					leftValue = maxLeft;
-				}
-
-				let widthValue = (leftValue + dragWidth / 2 - containerOffset) * 100 / containerWidth + "%";
-
-				$(".draggable").css("left", widthValue).on("mouseup touchend touchcancel", function() {
-					$(this).removeClass("draggable");
-					resizeElement.removeClass("resizable");
-				});
-				
-				$(".resizable").css("width", widthValue);
-				
-			}).on("mouseup touchend touchcancel", function() {
-				dragElement.removeClass("draggable");
-				resizeElement.removeClass("resizable");
-				
-			});
-		
-		}).on("mouseup touchend touchcancel", function(e) {
-			// stop clicping the image and move the slider
-			dragElement.removeClass("draggable");
-			resizeElement.removeClass("resizable");
-		
-		});
-	
-}
-
-        // overlay remove
-        $('.overlay').on('click', function(){
-          $('body').removeClass('overflow');
-          $('.list-menu').removeClass('open');
-          $('body,.overlay').removeClass('active');
-          $('body').removeClass('overflow');
-        });
-      
-      // scroll up start here
-            $(function(){
-              // $(window).scroll(function(){
-              //   if ($(this).scrollTop() > 300) {
-              //     $('.scrollToTop').css({'bottom':'2%', 'opacity':'1','transition':'all .5s ease'});
-              //   } else {
-              //     $('.scrollToTop').css({'bottom':'-30%', 'opacity':'0','transition':'all .5s ease'});
-              //   }
-              // });
-              //Click event to scroll to top
-              $('.scrollToTop').on('click', function(){
-                $('html, body').animate({scrollTop : 0},0);
-                return false;
-              });
-            });
-
-      //success alert
-      
-        $(".check-icon").hide();
-        setTimeout(function () {
-          $(".check-icon").show();
-        }, 0.10)
-
-// counter up js activation code
-
-$( document ).ready( function() {
-	
-	jQuery(function ($) {
-    	"use strict";
-    
-    	var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
-    
-    	var $counters = $(".counter");
-    
-    	/* Start counting, do this on DOM ready or with Waypoints. */
-		$counters.each(function (ignore, counter) {
-			var waypoint = new Waypoint( {
-				element: $(this),
-				handler: function() { 
-					counterUp(counter, {
-						duration: 3000,
-						delay: 16
-					}); 
-					this.destroy();
-				},
-				offset: 'bottom-in-view',
-			} );
-		});
-
-	});
- });
-// Cannot style datalist elements yet, so get
-// each option value and pass to jQuery UI Autocomplete
-$('input[data-list]').each(function () {
-  var availableTags = $('#' + $(this).attr("data-list")).find('option').map(function () {
-    return this.value;
-  }).get();
-
-  $(this).autocomplete({
-    source: availableTags
-  }).on('focus', function () {
-    $(this).autocomplete('search', ' ');
-  }).on('search', function () {
-    if ($(this).val() === '') {
-      $(this).autocomplete('search', ' ');
+      //if the user resizes the windows lets update our variables and resize our images
+      $(window).on("resize", function () {
+        let compSliderWidth = compSlider.width() + "px";
+        compSlider.find(".resize img").css({ width: compSliderWidth });
+      });
     }
   });
-});
 
-// li class active 
+  // This is where all the magic happens
+  // This is a modified version of the pen from Ege Görgülü - https://codepen.io/bamf/pen/jEpxOX - and you should check it out too.
+  function drags(dragElement, resizeElement, container) {
+
+    // This creates a variable that detects if the user is using touch input insted of the mouse.
+    let touched = false;
+    window.addEventListener('touchstart', function () {
+      touched = true;
+    });
+    window.addEventListener('touchend', function () {
+      touched = false;
+    });
+
+    // clicp the image and move the slider on interaction with the mouse or the touch input
+    dragElement.on("mousedown touchstart", function (e) {
+
+      //add classes to the emelents - good for css animations if you need it to
+      dragElement.addClass("draggable");
+      resizeElement.addClass("resizable");
+      //create vars
+      let startX = e.pageX ? e.pageX : e.originalEvent.touches[0].pageX;
+      let dragWidth = dragElement.outerWidth();
+      let posX = dragElement.offset().left + dragWidth - startX;
+      let containerOffset = container.offset().left;
+      let containerWidth = container.outerWidth();
+      let minLeft = containerOffset + 10;
+      let maxLeft = containerOffset + containerWidth - dragWidth - 10;
+
+      //add event listner on the divider emelent
+      dragElement.parents().on("mousemove touchmove", function (e) {
+
+        // if the user is not using touch input let do preventDefault to prevent the user from slecting the images as he moves the silder arround.
+        if (touched === false) {
+          e.preventDefault();
+        }
+
+        let moveX = e.pageX ? e.pageX : e.originalEvent.touches[0].pageX;
+        let leftValue = moveX + posX - dragWidth;
+
+        // stop the divider from going over the limits of the container
+        if (leftValue < minLeft) {
+          leftValue = minLeft;
+        } else if (leftValue > maxLeft) {
+          leftValue = maxLeft;
+        }
+
+        let widthValue = (leftValue + dragWidth / 2 - containerOffset) * 100 / containerWidth + "%";
+
+        $(".draggable").css("left", widthValue).on("mouseup touchend touchcancel", function () {
+          $(this).removeClass("draggable");
+          resizeElement.removeClass("resizable");
+        });
+
+        $(".resizable").css("width", widthValue);
+
+      }).on("mouseup touchend touchcancel", function () {
+        dragElement.removeClass("draggable");
+        resizeElement.removeClass("resizable");
+
+      });
+
+    }).on("mouseup touchend touchcancel", function (e) {
+      // stop clicping the image and move the slider
+      dragElement.removeClass("draggable");
+      resizeElement.removeClass("resizable");
+
+    });
+
+  }
+
+  // overlay remove
+  $('.overlay').on('click', function () {
+    $('body').removeClass('overflow');
+    $('.list-menu').removeClass('open');
+    $('body,.overlay').removeClass('active');
+    $('body').removeClass('overflow');
+  });
+
+  // scroll up start here
+  $(function () {
+    // $(window).scroll(function(){
+    //   if ($(this).scrollTop() > 300) {
+    //     $('.scrollToTop').css({'bottom':'2%', 'opacity':'1','transition':'all .5s ease'});
+    //   } else {
+    //     $('.scrollToTop').css({'bottom':'-30%', 'opacity':'0','transition':'all .5s ease'});
+    //   }
+    // });
+    //Click event to scroll to top
+    $('.scrollToTop').on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 0);
+      return false;
+    });
+  });
+
+  //success alert
+
+  $(".check-icon").hide();
+  setTimeout(function () {
+    $(".check-icon").show();
+  }, 0.10)
+
+  // counter up js activation code
+
+  $(document).ready(function () {
+
+    jQuery(function ($) {
+      "use strict";
+
+      var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
+
+      var $counters = $(".counter");
+
+      /* Start counting, do this on DOM ready or with Waypoints. */
+      $counters.each(function (ignore, counter) {
+        var waypoint = new Waypoint({
+          element: $(this),
+          handler: function () {
+            counterUp(counter, {
+              duration: 3000,
+              delay: 16
+            });
+            this.destroy();
+          },
+          offset: 'bottom-in-view',
+        });
+      });
+
+    });
+  });
+  // Cannot style datalist elements yet, so get
+  // each option value and pass to jQuery UI Autocomplete
+  $('input[data-list]').each(function () {
+    var availableTags = $('#' + $(this).attr("data-list")).find('option').map(function () {
+      return this.value;
+    }).get();
+
+    $(this).autocomplete({
+      source: availableTags
+    }).on('focus', function () {
+      $(this).autocomplete('search', ' ');
+    }).on('search', function () {
+      if ($(this).val() === '') {
+        $(this).autocomplete('search', ' ');
+      }
+    });
+  });
+
+  // li class active 
 
 
 
-    })(jQuery);
+})(jQuery);
 
 // input file preview and delete 
 
@@ -274,8 +274,8 @@ function handleFileSelect(e) {
     var fileReader = new FileReader();
 
     // Closure to capture the file information and apply validation.
-    fileReader.onload = (function(readerEvt) {
-      return function(e) {
+    fileReader.onload = (function (readerEvt) {
+      return function (e) {
         //Apply the validation rules for attachments upload
         ApplyFileValidationRules(readerEvt);
 
@@ -298,15 +298,15 @@ function handleFileSelect(e) {
 }
 
 //To remove attachment once user click on x button
-jQuery(function($) {
-  $("div").on("click", ".img-wrap .close", function() {
+jQuery(function ($) {
+  $("div").on("click", ".img-wrap .close", function () {
     var id = $(this)
       .closest(".img-wrap")
       .find("img")
       .data("id");
 
     //to remove the deleted item from array
-    var elementPos = AttachmentArray.map(function(x) {
+    var elementPos = AttachmentArray.map(function (x) {
       return x.FileName;
     }).indexOf(id);
     if (elementPos !== -1) {
@@ -351,8 +351,8 @@ function ApplyFileValidationRules(readerEvt) {
   if (CheckFileType(readerEvt.type) == false) {
     alert(
       "The file (" +
-        readerEvt.name +
-        ") does not match the upload conditions, You can only upload jpg/png/gif files"
+      readerEvt.name +
+      ") does not match the upload conditions, You can only upload jpg/png/gif files"
     );
     e.preventDefault();
     return;
@@ -362,8 +362,8 @@ function ApplyFileValidationRules(readerEvt) {
   if (CheckFileSize(readerEvt.size) == false) {
     alert(
       "The file (" +
-        readerEvt.name +
-        ") does not match the upload conditions, The maximum file size for uploads should not exceed 300000000 KB"
+      readerEvt.name +
+      ") does not match the upload conditions, The maximum file size for uploads should not exceed 300000000 KB"
     );
     e.preventDefault();
     return;
@@ -411,7 +411,7 @@ function CheckFilesCount(AttachmentArray) {
   //Since AttachmentArray.length return the next available index in the array,
   //I have used the loop to get the real length
   var len = 0;
-  
+
   for (var i = 0; i < AttachmentArray.length; i++) {
     if (AttachmentArray[i] !== undefined) {
       len++;
@@ -431,7 +431,7 @@ function RenderThumbnail(e, readerEvt) {
   ul.appendChild(li);
   li.innerHTML = [
     '<div class="img-wrap">  <span class="close">&times;</span>' +
-      '<img class="thumb" src="',
+    '<img class="thumb" src="',
     e.target.result,
     '" title="',
     escape(readerEvt.name),
@@ -463,3 +463,5 @@ function FillAttachmentArray(e, readerEvt) {
 }
 
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

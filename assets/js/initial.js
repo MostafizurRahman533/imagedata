@@ -1,82 +1,121 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.image-popup-vertical-fit').magnificPopup({
     type: 'image',
-    mainClass: 'mfp-with-zoom', 
-    gallery:{
-        enabled:true
-      },
-  
+    mainClass: 'mfp-with-zoom',
+    gallery: {
+      enabled: true
+    },
+
     zoom: {
-      enabled: true, 
-  
+      enabled: true,
+
       duration: 300, // duration of the effect, in milliseconds
       easing: 'ease-in-out', // CSS transition easing function
-  
-      opener: function(openerElement) {
-  
+
+      opener: function (openerElement) {
+
         return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
     }
-  }
-  
-  });
-  
+
   });
 
+});
+
 var swiper = new Swiper(".mySwiper", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  effect: "fade",
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
 });
 var swiper = new Swiper(".clientSwiper", {
-slidesPerView: 2,
-spaceBetween: 10,
-navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+  slidesPerView: 2,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-pagination: {
-  el: ".swiper-pagination",
-  clickable: true,
-},
-breakpoints: {
-  640: {
-    slidesPerView: 2,
-    spaceBetween: 20,
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
   },
-  768: {
-    slidesPerView: 4,
-    spaceBetween: 40,
+});
+var swiper = new Swiper(".marketSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
   },
-  1024: {
-    slidesPerView: 5,
-    spaceBetween: 50,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-},
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
 });
 var swiper = new Swiper(".testimonialSwiper", {
-slidesPerView: 1,
-spaceBetween: 10,
-pagination: {
-  el: ".swiper-pagination",
-  clickable: true,
-},
-breakpoints: {
-  640: {
-    slidesPerView: 1,
-    spaceBetween: 20,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
-  768: {
-    slidesPerView: 2,
-    spaceBetween: 40,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
-  1024: {
-    slidesPerView: 3,
-    spaceBetween: 50,
-  },
-},
 });
 var swiper = new Swiper(".trust-prof-slider", {
   slidesPerView: 2,
@@ -99,41 +138,41 @@ var swiper = new Swiper(".trust-prof-slider", {
 var swiper = new Swiper(".service-slider", {
   spaceBetween: 30,
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-  
+
 });
 var swiper = new Swiper(".service-details-slider", {
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-    slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
 });
 var swiper = new Swiper(".modal-swiper", {
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -148,7 +187,7 @@ var swiper = new Swiper(".blogslider", {
 
 // external js: isotope.pkgd.js
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   // init Isotope
   var $container = $('.isotope').isotope({
@@ -159,47 +198,47 @@ $(document).ready(function() {
       symbol: '.symbol',
       number: '.number parseInt',
       category: '[data-category]',
-      weight: function(itemElem) {
+      weight: function (itemElem) {
         var weight = $(itemElem).find('.weight').text();
         return parseFloat(weight.replace(/[\(\)]/g, ''));
       }
     }
   });
 
-// store filter for each group
-var filters = {};
+  // store filter for each group
+  var filters = {};
 
-$('.filters').on( 'click', '.button', function( event ) {
-  var $button = $( event.currentTarget );
-  // get group key
-  var $buttonGroup = $button.parents('.button-group');
-  var filterGroup = $buttonGroup.attr('data-filter-group');
-  // set filter for group
-  filters[ filterGroup ] = $button.attr('data-filter');
-  // combine filters
-  var filterValue = concatValues( filters );
-  // set filter for Isotope
-  $container.isotope({ filter: filterValue });
-});
-
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function( event ) {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    var $button = $( event.currentTarget );
-    $button.addClass('is-checked');
+  $('.filters').on('click', '.button', function (event) {
+    var $button = $(event.currentTarget);
+    // get group key
+    var $buttonGroup = $button.parents('.button-group');
+    var filterGroup = $buttonGroup.attr('data-filter-group');
+    // set filter for group
+    filters[filterGroup] = $button.attr('data-filter');
+    // combine filters
+    var filterValue = concatValues(filters);
+    // set filter for Isotope
+    $container.isotope({ filter: filterValue });
   });
-});
-  
-// flatten object by concatting values
-function concatValues( obj ) {
-  var value = '';
-  for ( var prop in obj ) {
-    value += obj[ prop ];
+
+  // change is-checked class on buttons
+  $('.button-group').each(function (i, buttonGroup) {
+    var $buttonGroup = $(buttonGroup);
+    $buttonGroup.on('click', 'button', function (event) {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      var $button = $(event.currentTarget);
+      $button.addClass('is-checked');
+    });
+  });
+
+  // flatten object by concatting values
+  function concatValues(obj) {
+    var value = '';
+    for (var prop in obj) {
+      value += obj[prop];
+    }
+    return value;
   }
-  return value;
-}
 
   //****************************
   // Isotope Load more button
@@ -213,7 +252,7 @@ function concatValues( obj ) {
   function loadMore(toShow) {
     $container.find(".hidden").removeClass("hidden");
 
-    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function(item) {
+    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
       return item.element;
     });
     $(hiddenElems).addClass('hidden');
@@ -232,7 +271,7 @@ function concatValues( obj ) {
   $container.after('<div class="text-center mt-3"> <button type="button" class="btn btn-trail" id="load-more"> Load More</button></div>');
 
   //when load more button clicked
-  $("#load-more").click(function() {
+  $("#load-more").click(function () {
     if ($('#filters').data('clicked')) {
       //when filter button clicked, set initial value for counter
       counter = initShow;
@@ -247,12 +286,12 @@ function concatValues( obj ) {
   });
 
   //when filter button clicked
-  $("#filters").click(function() {
+  $("#filters").click(function () {
     $(this).data('clicked', true);
 
     loadMore(initShow);
   });
 
-  
-  
+
+
 });

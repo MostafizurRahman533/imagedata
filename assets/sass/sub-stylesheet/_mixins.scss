@@ -69,6 +69,9 @@
     @else if $point == xl {
         @media (min-width: 1200px) { @content ; }
     }
+    @else if $point == xl2 {
+        @media (min-width: 1201px) { @content ; }
+    }
     @else if $point == max-xl {
         @media (max-width: 1199px) { @content ; }
     }

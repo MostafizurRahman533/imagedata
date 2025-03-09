@@ -9,24 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <!-- <link rel="preload" href="assets/sass/style.css" as="style"> --> 
     <!-- Link Swiper's CSS -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="assets/sass/style.css">
 
 </head>
-<body>
-
+<body class="loader-scroll">
+    <!-- preloader area start -->
+     <div class="loader"></div>
+    <!--preloader area end-->
     <!-- header area start -->
     <section id="header">
         <div class="top_bar">
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-between">
                     <div class="top-left d-flex d-sm-block d-none"> 
-                        <a href="mailto:imagedatait@gmail.com"><i class="fas fa-envelope-open"></i> imagedatait@gmail.com</a> &nbsp;&nbsp;
-                        <a href="tel:+880 1800 000000"><i class="fa-solid fa-phone"></i>+880 1800 000000</a>
+                        <!-- <a href="mailto:imagedatait@gmail.com"><i class="fas fa-envelope-open"></i> imagedatait@gmail.com</a> &nbsp;&nbsp;
+                        <a href="tel:+880 1800 000000"><i class="fa-solid fa-phone"></i>+880 1800 000000</a> -->
                     </div>
                     <div class="top-right d-flex justify-content-end w-sm-auto w-100">
-                        <a href="login.html"><i class="fa-solid fa-user"></i> Log In</a> &nbsp;&nbsp; 
-                        <a href="registration.html"><i class="fa-solid fa-user-plus"></i> Registration</a>
+                        <a href="mailto:imagedatait@gmail.com" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="imagedatait@gmail.com"><i class="fas fa-envelope-open"></i> </a> &nbsp;&nbsp;
+                        <a href="tel:+880 1800 000000" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="tel:+880 1800 000000"><i class="fa-solid fa-phone"></i></a>&nbsp;&nbsp;
+                        <a href="login.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Log In"><i class="fa-solid fa-user"></i> </a> &nbsp;&nbsp; 
+                        <a href="registration.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Registration"><i class="fa-solid fa-user-plus"></i> </a>
                     </div>
                 </div>
             </div>
@@ -96,36 +103,182 @@
     </section>
     <!-- header area end-->
     <!-- banenr area star-->
-    <section class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="h-100 d-flex align-items-center">
-                        <div class="banner-left">
-                            <div class="header-content">
-                                <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+    <section class="banner" >
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="banner-left">
+                                        <div class="header-content  ">
+                                            <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+                                        </div>
+                                        <div class="banner-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <div class="banner-button">
+                                            <a href="#0" class="btn btn-order mt-2"> Order Now</a>
+                                            <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="banner-content">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                            <div class="col-md-7">
+                                <img src="assets/images/top_page/banner/01.png" alt="n/a" class="img-fluid">
                             </div>
-                            <div class="banner-button">
-                                <a href="#0" class="btn btn-order mt-2"> Order Now</a>
-                                <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
-                            </div>
-                        </div>
-                        
-                    </div> 
-                    
+                        </div>                        
+                    </div>
                 </div>
-                <div class="col-md-7">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="assets/images/top_page/banner/01.png" alt="n/a" class="img-fluid"></div>
-                          <div class="swiper-slide"><img src="assets/images/top_page/banner/02.png" alt="n/a" class="img-fluid"></div>
-                          <div class="swiper-slide"><img src="assets/images/top_page/banner/01.png" alt="n/a" class="img-fluid"></div>
-                        </div>
-                        <div class="swiper-button-next"><i class="fa-solid fa-arrow-right-long"></i></div>
-                        <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="banner-left">
+                                        <div class="header-content">
+                                            <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+                                        </div>
+                                        <div class="banner-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <div class="banner-button">
+                                            <a href="#0" class="btn btn-order mt-2"> Order Now</a>
+                                            <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/images/top_page/banner/01.png" alt="n/a" class="img-fluid">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="banner-left">
+                                        <div class="header-content">
+                                            <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+                                        </div>
+                                        <div class="banner-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <div class="banner-button">
+                                            <a href="#0" class="btn btn-order mt-2"> Order Now</a>
+                                            <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/images/top_page/banner/02.png" alt="n/a" class="img-fluid">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="banner-left">
+                                        <div class="header-content">
+                                            <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+                                        </div>
+                                        <div class="banner-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <div class="banner-button">
+                                            <a href="#0" class="btn btn-order mt-2"> Order Now</a>
+                                            <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/images/top_page/banner/03.png" alt="n/a" class="img-fluid">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="banner-left">
+                                        <div class="header-content">
+                                            <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+                                        </div>
+                                        <div class="banner-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <div class="banner-button">
+                                            <a href="#0" class="btn btn-order mt-2"> Order Now</a>
+                                            <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/images/top_page/banner/04.png" alt="n/a" class="img-fluid">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="banner-left">
+                                        <div class="header-content">
+                                            <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+                                        </div>
+                                        <div class="banner-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <div class="banner-button">
+                                            <a href="#0" class="btn btn-order mt-2"> Order Now</a>
+                                            <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/images/top_page/banner/06.png" alt="n/a" class="img-fluid">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="banner-left">
+                                        <div class="header-content">
+                                            <h3 class="text-capitalize">We are to perfectly edited product photos</h3>
+                                        </div>
+                                        <div class="banner-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#0">Lorem Ipsum is</a> simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <div class="banner-button">
+                                            <a href="#0" class="btn btn-order mt-2"> Order Now</a>
+                                            <a href="#0" class="btn btn-trail mt-2"> Free Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/images/top_page/banner/07.png" alt="n/a" class="img-fluid">
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -174,7 +327,7 @@
                                     <h4 class="d-flex justify-content-between align-items-center">Retouching Image <img src="assets/images/top_page/service/01.svg" alt="n/a" class="img-fluid"></h4>
                                 </div> 
                                 <div class="service-cont">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                     <ul>
                                         <li class="text-capitalize"> <i class="fa-solid fa-angle-right"></i> &nbsp;&nbsp; bullet iconMaintain 100% Accuracy</li>
                                         <li class="text-capitalize"><i class="fa-solid fa-angle-right"></i> &nbsp;&nbsp; bullet iconCustomized Image Clipping</li>
@@ -335,10 +488,10 @@
     <section class="dashboard-area">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-4 animate__animated animate__fadeInDown animate__delay-1s">
                     <div class="text-center">
                         <div class="dashboard-img">
-                            <img src="assets/images/top_page/dashboard/01.svg" alt="n/a" class="img-fluid">
+                            <img src="assets/images/top_page/dashboard/01.svg"  data-wow-delay="0.4s" alt="n/a" class="img-fluid wow fadeInDown">
                         </div> 
                         <div class="dash-heder-con">
                             <h4>Customized Editing</h4>
@@ -348,10 +501,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 animate__animated animate__fadeInDown animate__delay-1s">
                     <div class="text-center">
                         <div class="dashboard-img">
-                            <img src="assets/images/top_page/dashboard/02.svg" alt="n/a" class="img-fluid">
+                            <img src="assets/images/top_page/dashboard/02.svg" alt="n/a" class="img-fluid wow fadeInDown" data-wow-delay="0.3s" >
                         </div> 
                         <div class="dash-heder-con">
                             <h4>Easy Dashboard</h4>
@@ -361,10 +514,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 animate__animated animate__fadeInDown animate__delay-1s">
                     <div class="text-center">
                         <div class="dashboard-img">
-                            <img src="assets/images/top_page/dashboard/03.svg" alt="n/a" class="img-fluid">
+                            <img src="assets/images/top_page/dashboard/03.svg" alt="n/a" class="img-fluid wow fadeInDown" data-wow-delay="0.2s" >
                         </div> 
                         <div class="dash-heder-con">
                             <h4>24/ 7 Support</h4>
@@ -497,6 +650,32 @@
         </div>
     </section>
     <!-- achivement area end-->
+        <!-- client area start-->
+    <section class="market-area">
+        <div class="container">
+            <div class="header-area text-center">
+                <h3>We Work For those Marketplace</h3>
+            </div>
+            <div class="slider-area">
+                <div class="swiper marketSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/01.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/02.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/03.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/04.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/05.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/01.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/02.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/03.png" alt="n/a" class="imag-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/top_page/marketplace/04.png" alt="n/a" class="imag-fluid"></div>
+                    </div>                    
+                    <div class="swiper-button-next"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+                  </div>
+            </div> 
+        </div>
+    </section>
+    <!-- client area end-->
     <!-- testimonial area start-->
     <section class="testimonial-area text-center">
         <div class="container">
@@ -649,7 +828,7 @@
             <div class="container">
                 <div class="footer-middle">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-12">
                             <div class="footer-about-area">
                                 <div class="logo d-flex align-items-center">
                                     <img src="assets/images/top_page/logo/logo.svg" alt="n/a">
@@ -672,11 +851,13 @@
                                         <a href="#0" class="pinterest"><i class="fa-brands fa-pinterest"></i></a>
                                         <a href="#0" class="twitter"><i class="fa-brands fa-twitter"></i></a>
                                         <a href="#0" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#0" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#0" class="skype"><i class="fa-brands fa-skype"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="footer-links">
                                 <h3>ReSource</h3>
                                 <ul class="footer-link-area">
@@ -687,7 +868,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="footer-links">
                                 <h3>ReSource</h3>
                                 <ul class="footer-link-area">
@@ -698,7 +879,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="footer-links">
                                 <h3>ReSource</h3>
                                 <ul class="footer-link-area">
@@ -746,7 +927,8 @@
     </footer>
     <!-- footer area end-->
     <!--js file-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--js file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://use.fontawesome.com/acf37c162d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -755,6 +937,67 @@
     <script type="module" src="assets/js/initial.js"></script>
     <!-- Swiper JS -->
     <script src="node_modules/swiper/swiper-bundle.js"></script>    
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>    
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="node_modules/preloadjs/lib/preloadjs.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    <!-- <script>
+
+        let progress = document.getElementById('progress');    
+        var queue = new createjs.LoadQueue(false);
+        queue.on("fileload", handleFileComplete);
+        queue.on('progress', event => {
+            let progress = Math.floor(event.progress * 100);
+            this.progress.style.width = -progress+'%';
+            if (progress == 100) {
+                console.log('all done');  
+            }
+        })
+        queue.on('complete', event => {
+            // gallery.classList.add('fadeIn');
+            setTimeout(() => {
+                document.querySelector(".preloader").style.display = "none";  
+            },500)
+    
+        })
+        // css file loaded
+        queue.loadFile('assets/fontawesome-pro-5.11.2/fontawesome-pro-5.11.2-web/css/all.min.css');
+        queue.loadFile('assets/fontawesome-pro-5.11.2/fontawesome-pro-5.11.2-web/css/fontawesome.min.css');
+        queue.loadFile('assets/css/animation.css');
+        queue.loadFile('assets/sass/style.css');
+        // js file loaded
+        queue.loadFile('assets/js/jquery.js');
+        queue.loadFile('node_modules/swiper/swiper-bundle.js');
+        queue.loadFile('assets/js/functtion.js');
+        queue.loadFile('assets/js/wow.js');
+        queue.loadFile('./ckeditor5plugin/build/ckeditor.js');
+        queue.loadFile('node_modules/sweetalert2/dist/sweetalert2.all.min.js');
+        queue.loadFile('node_modules/preloadjs/lib/preloadjs.js');
         
+        function handleFileComplete(event) {
+            
+            var item = event.item; // A reference to the item that was passed in to the LoadQueue
+            var type = item.type;
+    
+            // Add any images to the page body.
+            if (type == createjs.Types.IMAGE) {
+            gallery.appendChild(event.result);
+                
+            }
+    
+        }
+    
+    </script> -->
+    <script>
+        window.addEventListener("load", () =>{
+            const loader = document.querySelector('.loader');
+            const body = document.querySelector('body');
+            loader.classList.add("loader-hidden");
+            body.classList.remove('loader-scroll')
+        })
+    </script>
 </body>
 </html>

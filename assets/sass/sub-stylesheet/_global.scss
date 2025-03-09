@@ -39,13 +39,16 @@ body {
   font-weight: 500;
   position: relative;
   transition: all 0.3s ease-in-out;
-  background-color: #f9f9f9;
+  background-color: #FBFDFF;
   counter-reset: my-sec-counter;
   scroll-behavior: smooth;
   scrollbar-width: 2px;
   letter-spacing: 0.065em;
-  font-size: $fs-body !important;
+  font-size: $fs-small !important;
   line-height: 25.5px;
+  @include breakpoint(sm){
+    font-size: $fs-body !important;
+  }
 }
 body.overflow{
 overflow: hidden;
@@ -82,10 +85,16 @@ border: 0;
   }
 }
 .btn-order, .btn-trail, .btn-bg-remove, .btn-e-comme, .btn-gost{
-  padding: 13px 25px;
+  padding: 10px 13px;
   margin: 0 10px 0 0;
   border-radius: $border-radius-lg;
-  font-size: $fs-body;
+  font-size: $fs-small;
+  @include breakpoint(mid-md) {
+      padding: 13px 25px;
+    }
+    @include breakpoint(sm) {
+      font-size: $fs-body;
+    }
 }
 .btn-order{
   background-color: $title-color-trns;
@@ -909,7 +918,7 @@ cursor: pointer; }
   .comparison-slider-wrapper {
     position: relative;
     width: 100%;
-    margin: 20px 0;
+    margin: 12px 0;
     background-color: white;
   
     .comparison-slider {
@@ -1045,3 +1054,27 @@ cursor: pointer; }
     }
   }
   
+  @keyframes slider-animation{
+    from{
+      display: flex;
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    to{
+      display: flex;
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+  }
+  @keyframes slider-animation2{
+    from{
+      display: flex;
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+    to{
+      display: flex;
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+  }

@@ -1,6 +1,6 @@
 //*======= header css start =====*//
 .top_bar{
-    background-color: $title-color;
+    background-color: #21325B;
     height: 50px;
     padding: 12px 0px;
     transform: scaleY(1);
@@ -64,7 +64,7 @@
                         text-decoration: none;
                         display: flex;
                         p{
-                            font-size: $fs-header;
+                            font-size: $fs-h4;
                             font-weight: 700;
                             color: $title-color;
                             letter-spacing: 1px;
@@ -92,7 +92,7 @@
                     .overlay.active{
                         display: block;
                     }
-                    @include breakpoint (lg){
+                    @include breakpoint (xl){
                         .overlay{
                             display: none;
                         }
@@ -128,7 +128,7 @@
                                 transition: all 0.3s ease-in-out;
                                 color: white;
                                 width: 100%;
-                                @include breakpoint(lg){
+                                @include breakpoint(xl){
                                     display: flex;
                                     justify-content: space-between;
                                     width: auto;
@@ -147,28 +147,28 @@
                                         transition: all 0.3s ease-in-out;
                                         }
                                         .down-menu1{
-                                            top: 30px;
+                                            top: 10px;
                                             left: 0px;
                                             width: 260px !important;
                                             height: 100%;
                                             transition: all 0.3s ease-in-out;
                                             transform: scaley(1);
                                             border: 0px solid $title-color;
-                                            @include breakpoint(lg){
+                                            @include breakpoint(xl){
                                                 border: 2px solid $title-color;                                            
                                             }
                                             ul{
                                                 color: $theme-light2;
                                                 padding: 0px;
-                                                @include breakpoint(lg){
+                                                @include breakpoint(xl){
                                                     padding-left: 2rem;
                                                 }
                                                 li{
                                                     height: auto;
-                                                    padding: 5px 0 10px 0;
+                                                    padding: 5px 0 10px 8px;
                                                     margin: 5px 0;
                                                     background-color: #071f5a;
-                                                    @include breakpoint(lg){
+                                                    @include breakpoint(xl){
                                                         background-color: transparent;
                                                     }
                                                     a{
@@ -180,7 +180,7 @@
                                                     }
                                                 }
                                             }
-                                            @include breakpoint(lg){
+                                            @include breakpoint(xl){
                                                 top: 30px;
                                                 left: -285px !important;
                                                 width: 656px !important;
@@ -192,11 +192,11 @@
                                                 transition: all 0.3s ease-in;
                                                 color: white; 
                                             }
-                                            @include breakpoint (lg){
+                                            @include breakpoint (xl){
                                             }
                                             .drop-aling{
                                                 display: block;
-                                                @include breakpoint (lg){
+                                                @include breakpoint (xl){
                                                     display: flex;
                                                     ul.design-drop{
                                                         padding: 10px;
@@ -331,9 +331,9 @@
                                         transition: all 0.3s ease-in-out;
                                         }
                                         .down-menu2{
-                                            top: 30px;
+                                            top: 10px;
                                             left: 0px;
-                                            width: 260px !important;
+                                            width: 260px;
                                             height: 100%;
                                             transition: all 0.3s ease-in-out;
                                             transform: scaley(1);
@@ -343,10 +343,10 @@
                                                 padding: 0;
                                                 li{
                                                     height: auto;
-                                                    padding: 5px 0 10px 0;
+                                                    padding: 5px 0 10px 8px;
                                                     margin: 5px 0;
                                                     background-color: #071f5a;
-                                                    @include breakpoint(lg){
+                                                    @include breakpoint(xl){
                                                         background-color: transparent;
                                                     }
                                                     a{
@@ -358,7 +358,7 @@
                                                     }
                                                 }
                                             }
-                                            @include breakpoint(lg){
+                                            @include breakpoint(xl){
                                                 top: 30px;
                                                 left: -55px ;
                                                 width: 232px ;
@@ -370,12 +370,12 @@
                                                 transition: all 0.3s ease-in;
                                                 color: white; 
                                             }
-                                            @include breakpoint (lg){
+                                            @include breakpoint (xl){
                                                 
                                             }
                                             .drop-aling{
                                                 display: block;
-                                                @include breakpoint (lg){
+                                                @include breakpoint (xl){
                                                     display: flex;
                                                     ul.design-drop{
                                                         padding: 12px 0;
@@ -433,7 +433,7 @@
                                     position: absolute;
                                     top: 5px;
                                     right: 5px;
-                                    @include breakpoint (lg){
+                                    @include breakpoint (xl){
                                         padding: 0x;
                                         position: relative;
                                         top: 2px;
@@ -455,7 +455,7 @@
                                     padding: 0px 0px;
                                     .drop-aling{
                                         display: block;
-                                        @include breakpoint (lg){
+                                        @include breakpoint (xl){
                                             display: flex;
                                             ul{
                                                 padding: 10px;
@@ -476,14 +476,14 @@
                                     box-sizing: border-box;
                                     position: relative;
                                     height: 0px;
-                                    width: 150px;
+                                    width: 260px;
                                     border-radius: 10px;
                                     top: 0px;
                                     transform: scaley(0);
                                     transform-origin: top;
                                     transition: all 0.3 ease-in-out;
                                     padding: 10px;
-                                    @include breakpoint (lg){
+                                    @include breakpoint (xl){
                                         width: auto !important;
                                     }
                                     li{
@@ -517,7 +517,7 @@
                                     }
                                 }
                             }
-                            @include breakpoint (lg){
+                            @include breakpoint (xl){
                                 display: flex;
                                 flex-wrap: wrap;
                                 align-items: center;
@@ -621,7 +621,7 @@
                                         padding: 5px;
                                         transform: rotate(45deg);
                                         transition: all 0.3s ease-in-out;
-                                        @include breakpoint(lg){
+                                        @include breakpoint(xl){
                                             padding: 0px;
                                         }
                                     }
@@ -679,7 +679,7 @@
                         
                         }
                         .menu-bar{
-                            @include breakpoint (max-lg){
+                            @include breakpoint (max-xl){
                                 div{
                                     height: 2px;
                                     width: 20px;
@@ -696,6 +696,7 @@
             }
         }
     }
+       
 }
 .navarea{
     background-color: white;
@@ -719,7 +720,7 @@
                     text-decoration: none;
                     display: flex;
                     p{
-                        font-size: $fs-header;
+                        font-size: $fs-h4;
                         font-weight: 700;
                         color: $title-color;
                         letter-spacing: 1px;
@@ -747,7 +748,7 @@
                 .overlay.active{
                     display: block;
                 }
-                @include breakpoint (lg){
+                @include breakpoint (xl){
                     .overlay{
                         display: none;
                     }
@@ -783,7 +784,7 @@
                             transition: all 0.3s ease-in-out;
                             color: white;
                             width: 100%;
-                            @include breakpoint(lg){
+                            @include breakpoint(xl){
                                 display: flex;
                                 justify-content: space-between;
                                 width: auto;
@@ -802,28 +803,28 @@
                                     transition: all 0.3s ease-in-out;
                                     }
                                     .down-menu1{
-                                        top: 30px;
+                                        top: 10px;
                                         left: 0px;
                                         width: 260px !important;
                                         height: 100%;
                                         transition: all 0.3s ease-in-out;
                                         transform: scaley(1);
                                         border: 0px solid $title-color;
-                                        @include breakpoint(lg){
+                                        @include breakpoint(xl){
                                             border: 2px solid $title-color;                                            
                                         }
                                         ul{
                                             color: $theme-light2;
                                             padding: 0px;
-                                            @include breakpoint(lg){
+                                            @include breakpoint(xl){
                                                 padding-left: 2rem;
                                             }
                                             li{
                                                 height: auto;
-                                                padding: 5px 0 10px 0;
+                                                padding: 5px 0 10px 8px;
                                                 margin: 5px 0;
                                                 background-color: #071f5a;
-                                                @include breakpoint(lg){
+                                                @include breakpoint(xl){
                                                     background-color: transparent;
                                                 }
                                                 a{
@@ -835,7 +836,7 @@
                                                 }
                                             }
                                         }
-                                        @include breakpoint(lg){
+                                        @include breakpoint(xl){
                                             top: 30px;
                                             left: -285px !important;
                                             width: 656px !important;
@@ -847,11 +848,11 @@
                                             transition: all 0.3s ease-in;
                                             color: white; 
                                         }
-                                        @include breakpoint (lg){
+                                        @include breakpoint (xl){
                                         }
                                         .drop-aling{
                                             display: block;
-                                            @include breakpoint (lg){
+                                            @include breakpoint (xl){
                                                 display: flex;
                                                 ul.design-drop{
                                                     padding: 10px;
@@ -986,9 +987,9 @@
                                     transition: all 0.3s ease-in-out;
                                     }
                                     .down-menu2{
-                                        top: 30px;
+                                        top: 10px;
                                         left: 0px;
-                                        width: 260px !important;
+                                        width: 260px;
                                         height: 100%;
                                         transition: all 0.3s ease-in-out;
                                         transform: scaley(1);
@@ -998,10 +999,10 @@
                                             padding: 0;
                                             li{
                                                 height: auto;
-                                                padding: 5px 0 10px 0;
+                                                padding: 5px 0 10px 8px;
                                                 margin: 5px 0;
                                                 background-color: #071f5a;
-                                                @include breakpoint(lg){
+                                                @include breakpoint(xl){
                                                     background-color: transparent;
                                                 }
                                                 a{
@@ -1013,7 +1014,7 @@
                                                 }
                                             }
                                         }
-                                        @include breakpoint(lg){
+                                        @include breakpoint(xl){
                                             top: 30px;
                                             left: -55px ;
                                             width: 232px ;
@@ -1025,12 +1026,12 @@
                                             transition: all 0.3s ease-in;
                                             color: white; 
                                         }
-                                        @include breakpoint (lg){
+                                        @include breakpoint (xl){
                                             
                                         }
                                         .drop-aling{
                                             display: block;
-                                            @include breakpoint (lg){
+                                            @include breakpoint (xl){
                                                 display: flex;
                                                 ul.design-drop{
                                                     padding: 12px 0;
@@ -1088,7 +1089,7 @@
                                 position: absolute;
                                 top: 5px;
                                 right: 5px;
-                                @include breakpoint (lg){
+                                @include breakpoint (xl){
                                     padding: 0x;
                                     position: relative;
                                     top: 2px;
@@ -1110,7 +1111,7 @@
                                 padding: 0px 0px;
                                 .drop-aling{
                                     display: block;
-                                    @include breakpoint (lg){
+                                    @include breakpoint (xl){
                                         display: flex;
                                         ul{
                                             padding: 10px;
@@ -1131,14 +1132,14 @@
                                 box-sizing: border-box;
                                 position: relative;
                                 height: 0px;
-                                width: 150px;
+                                width: 260px;
                                 border-radius: 10px;
                                 top: 0px;
                                 transform: scaley(0);
                                 transform-origin: top;
                                 transition: all 0.3 ease-in-out;
                                 padding: 10px;
-                                @include breakpoint (lg){
+                                @include breakpoint (xl){
                                     width: auto !important;
                                 }
                                 li{
@@ -1172,7 +1173,7 @@
                                 }
                             }
                         }
-                        @include breakpoint (lg){
+                        @include breakpoint (xl){
                             display: flex;
                             flex-wrap: wrap;
                             align-items: center;
@@ -1276,7 +1277,7 @@
                                     padding: 5px;
                                     transform: rotate(45deg);
                                     transition: all 0.3s ease-in-out;
-                                    @include breakpoint(lg){
+                                    @include breakpoint(xl){
                                         padding: 0px;
                                     }
                                 }
@@ -1334,7 +1335,7 @@
                     
                     }
                     .menu-bar{
-                        @include breakpoint (max-lg){
+                        @include breakpoint (max-xl){
                             div{
                                 height: 2px;
                                 width: 20px;

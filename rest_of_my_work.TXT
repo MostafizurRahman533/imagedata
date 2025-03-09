@@ -1,0 +1,28 @@
+<!-- front-end -->
+
+01. all css need to fixed.
+
+02. measure the image size in every file view wise to decorate the website.
+
+<!-- content writting -->
+
+01 blog content 8-10 and image will provide by client. 
+
+<!-- backend -->
+
+01. index done.
+02. service. wroking..
+03. service details.
+04. blog. done
+05. blog details. 
+06. about us.
+07. contact us.
+08. login.
+09. registration 
+10. quote page
+11. trail page.
+12. portfolio page.
+13. pricing page.
+14. terms & condition.
+15. privacy policy.
+16. 404 page. 
